@@ -1,0 +1,58 @@
+    .section-3 {
+
+        overflow: hidden;
+
+        .container-fluid {
+            position: relative;
+
+            .shape {
+                width: 300px;
+                position: absolute !important;
+                top: 63%;
+                left: 36%;
+            }
+
+            .row {
+
+                .text-box {
+                    padding: 0.8rem 0.3rem 0.3rem 0.3rem !important;
+                    background-color: #F5F5F5;
+
+
+                    .text {
+                        h1 {
+                            font-size: 30px !important;
+                        }
+
+                        p {
+                            font-size: 18px !important;
+                        }
+
+                        img {
+                            width: 200px !important;
+                        }
+                    }
+
+                    .icon-box {
+                        img {
+                            width: 300px;
+                        }
+
+                        .icons .icon {
+                            img {
+                                width: 30px !important;
+                            }
+
+                            p {
+                                font-size: 15px;
+                            }
+                        }
+
+                        .icon:not(:first-child) {
+                            margin-left: 30px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
