@@ -2,108 +2,165 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meladora</title>
+    <link rel="icon" href="img/link-before-icon.svg">
     <!-------------- Bootstrap Link  ----------------->
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
     <!-------------- Font Awesome Link ----------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------- OwlCarousel Min.css Link  ----------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------- OwlCarousel Default.min.css Link  ----------------->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-------------- Main CSS Link  ----------------->
-    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="sass/style.css" />
 </head>
 
 <body>
+    <!----------------- Header start --------------->
 
-    <!----------------- Section-1 start --------------->
-
-    <div class="section-1">
-
-        <!----------------- Header-1 start --------------->
-
-        <div class="header-1">
-            <div class="container">
-                <div class="number">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+994 (70) 5555777</p>
+    <header id="header" class="header d-flex justify-content-center">
+        <div class="container ms-2 me-2">
+            <div class="header-1 d-flex justify-content-between align-items-center">
+                <div class="header-1-left">
+                    <div class="mobile-number">
+                        <a href="tel:994705555777">
+                            <i class="fas fa-phone"></i>
+                            +994(70)555-57-77
+                        </a>
+                    </div>
                 </div>
-                <div class="social-media">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-            </div>
-        </div>
-
-        <!----------------- Header-1 end --------------->
-
-        <!----------------- Header-2 start --------------->
-
-        <nav class="navbar navbar-expand-lg header-2">
-            <div class="container">
-                <img src="img/Logo.png" alt="logo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link text-light" href="">Biz kimik?</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="">Bağlarımız</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="">Məhsullarımız</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="">Xidmətlərimiz</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="">Sosial məsuliyyət</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="">Əlaqə</a></li>
-                        <li class="nav-item"><a class="nav-link text-light search" href="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-search" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                </svg>
-                            </a></li>
+                <div class="header-1-right">
+                    <ul class="social-icons d-flex justify-content-between align-items-center">
+                        <li class="icon">
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li class="icon">
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                        <li class="icon">
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li class="icon">
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="icon">
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </nav>
+            <div class="header-2 d-flex justify-content-between align-items-center">
+                <div class="header-2-logo">
+                    <img src="img/logo.svg" alt="logo" />
+                </div>
+                <nav class="header-2-nav d-flex justify-content-between align-items-center">
+                    <ul class="nav-links d-flex">
+                        <li class="nav-link"><a href="">Biz kimik?</a></li>
+                        <li class="nav-link"><a href="">Bağlarımız</a></li>
+                        <li class="nav-link"><a href="">Məhsullarımız</a></li>
+                        <li class="nav-link"><a href="">Xidmətlərimiz</a></li>
+                        <li class="nav-link"><a href="">Sosial məsuliyyət</a></li>
+                        <li class="nav-link"><a href="">Əlaqə</a></li>
+                    </ul>
+                    <input type="text" name="search" placeholder="Axtar.." />
+                </nav>
+                <div class="header-mobile-icon bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="header-mobile-menu" id="mobile-menu">
+                <div class="header-mobile-wrapper d-flex flex-column justify-content-between align-items-center">
+                    <div class="header-mobile-head d-flex justify-content-between align-items-center ps-4 pe-4 pt-3">
+                        <a href="">
+                            <img src="img/logo-white.svg" class="header-mobile-logo" />
+                        </a>
+                        <div class="menu-close-btn bar">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="header-mobile-body">
+                        <nav class="header-mobile-nav">
+                            <ul class="header-mobile-links d-flex flex-column align-items-center">
+                                <li class="header-mobile-link">
+                                    <a href="">Biz kimik?</a>
+                                </li>
+                                <li class="header-mobile-link">
+                                    <a href="">Bağlarımız</a>
+                                </li>
+                                <li class="header-mobile-link">
+                                    <a href="">Məhsullarımız</a>
+                                </li>
+                                <li class="header-mobile-link">
+                                    <a href="">Xidmətlərimiz</a>
+                                </li>
+                                <li class="header-mobile-link">
+                                    <a href="">Sosial məsuliyyət</a>
+                                </li>
+                                <li class="header-mobile-link"><a href="">Əlaqə</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-mobile-foot pb-2 d-flex justify-content-center">
+                        <div class="mobile-social-icons d-flex justify-content-between align-items-center pt-2">
+                            <li class="mobile-social-icon">
+                                <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li class="mobile-social-icon">
+                                <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="mobile-social-icon">
+                                <a href="" target="_blank">
+                                    <i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="mobile-social-icon">
+                                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li class="mobile-social-icon">
+                                <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <!----------------- Header-2 end --------------->
-
-    </div>
-
-    <!------------------ Section-1 end ---------------->
-
+    <!------------------ Header end ---------------->
 
     <!----------------- Section-2 start --------------->
 
-    <div class="section-2">
-        <div class="container">
-            <div class="row image-cards">
-                <div class="col-md-3">
-                    <div class="image">
+    <div class="banner">
+        <div class="overlay"></div>
+        <img src="img/banner.jpg" alt="banner">
+        <div class="carousel">
+            <div class="container">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
                         <img src="img/fruits-img.png" class="rounded">
                         <div class="text-box">
                             <h1>Meyvələr</h1>
                             <a href="">Daha çox ...</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="image">
+                    <div class="item">
                         <img src="img/vegetables-img.png" class="rounded">
                         <div class="text-box">
                             <h1>Tərəvəzlər</h1>
                             <a href="">Daha çox ...</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="image">
+                    <div class="item">
                         <img src="img/flour-img.png" class="rounded">
                         <div class="text-box">
                             <h1>Taxıl</h1>
@@ -119,58 +176,57 @@
 
     <!----------------- Section-3 start --------------->
 
-    <div class="section-3 mt-5 d-flex justify-content-center">
+    <div id="about" class="about section-3 mt-5 d-flex justify-content-center">
         <div class="container-fluid d-flex">
-            <img class="shape" src="img/shape.png" alt="shape">
+            <img class="shape" src="img/shape.png" alt="shape" />
             <div class="row">
-                <img src="img/section-2-img.png" class="img-responsive col-lg-5" alt="image" width="250" height="750">
+                <img src="img/section-2-img.png" class="section-3-img col-lg-5" alt="image" width="250" height="750" />
                 <div
                     class="row text-box col-lg-7 d-flex align-items-center justify-content-center flex-column text-center mt-lg-3 mb-lg-3">
-                    <div class="text d-flex align-items-center justify-content-center flex-column ">
+                    <div class="text d-flex align-items-center justify-content-center flex-column">
                         <h1 class="mt-1">Biz kimik?</h1>
-                        <img src="img/leaf-img.png" class="mt-1 mb-2">
-                        <p>Əslində hər şey illər əvvəl İsmayıllı rayonunda ailəvi gəzintidə olduğumuz
-                            zaman baş verdi. İsmayıllı rayonunun füsunkar təbiətinin gözəlliyi bizim bir gün burda kənd
-                            təsərufatı ilə məşqul olmaq arzusunu oyatdı. Daha sonra dostlarımızla bu məsələni müzakirə
-                            edərək İsmayıllıda təsəruffat qurmağa qərar verdik.
-                            Böyük uğurlar vaxtında və yerində verilən qərarlarla çox bağlıdır.
-                            Elə bizdə ilk səfərdə qərar verdik və başladıq.İllər çox serətli keçdi.Bizdə böyümədə
-                            zamanın
-                            sürətindən geri qalmadıq.Qısa zaman müddətində əldə etdiyimiz uğurlar və daha sürətlə
-                            böyüməyə
-                            davam etməyimiz işimizə olan sevginin göstəricisidir.
-                            Alma,armud,nektarin,gavalı,gilas və qoz yetişdirməklə qalmadıq,tingçilik və toxumçuluqla
-                            məhsul
-                            sıramızı genişləndirdik.
-                            qısa zamanda ən son texnoloji yeniliklərlə damla suvarma sistemlərinin qurulması BAĞLARIN
-                            layihələndirilməsi,salınması kimi çətin işlərin ödəsindən uğurla gəldik.
-                            2022 ci ildə əsas hədəfimiz brendimizin "made in AZERBAİJAN" adına layiq ölkə kənarında
-                            rəflərdə
-                            görünməsidir.
-                            növbəti hədəfləri sizlərlə paylaşmaq arzusuyla.
-                            <br><br>
+                        <img src="img/leaf-img.png" class="mt-1 mb-2" />
+                        <p>
+                            Əslində hər şey illər əvvəl İsmayıllı rayonunda ailəvi gəzintidə
+                            olduğumuz zaman baş verdi. İsmayıllı rayonunun füsunkar
+                            təbiətinin gözəlliyi bizim bir gün burda kənd təsərufatı ilə
+                            məşqul olmaq arzusunu oyatdı. Daha sonra dostlarımızla bu
+                            məsələni müzakirə edərək İsmayıllıda təsəruffat qurmağa qərar
+                            verdik. Böyük uğurlar vaxtında və yerində verilən qərarlarla çox
+                            bağlıdır. Elə bizdə ilk səfərdə qərar verdik və başladıq.İllər
+                            çox serətli keçdi.Bizdə böyümədə zamanın sürətindən geri
+                            qalmadıq.Qısa zaman müddətində əldə etdiyimiz uğurlar və daha
+                            sürətlə böyüməyə davam etməyimiz işimizə olan sevginin
+                            göstəricisidir. Alma,armud,nektarin,gavalı,gilas və qoz
+                            yetişdirməklə qalmadıq,tingçilik və toxumçuluqla məhsul sıramızı
+                            genişləndirdik. qısa zamanda ən son texnoloji yeniliklərlə damla
+                            suvarma sistemlərinin qurulması BAĞLARIN
+                            layihələndirilməsi,salınması kimi çətin işlərin ödəsindən uğurla
+                            gəldik. 2022 ci ildə əsas hədəfimiz brendimizin "made in
+                            AZERBAİJAN" adına layiq ölkə kənarında rəflərdə görünməsidir.
+                            növbəti hədəfləri sizlərlə paylaşmaq arzusuyla. <br /><br />
                             hörmətlə
-                            <br><br>
+                            <br /><br />
                             MELADORA kollektivi
                         </p>
                     </div>
-                    <div class="row icon-box d-flex align-items-center justify-content-center flex-column mt-2">
-                        <img src="img/leaf-img.png" alt="img">
+                    <div class="row icon-box d-flex align-items-center justify-content-center flex-column mt-2 pb-4">
+                        <img src="img/leaf-img.png" alt="img" />
                         <div class="icons d-flex align-items-center justify-content-center mt-3">
                             <div class="icon icon-1 d-flex align-items-center justify-content-center flex-column">
-                                <img src="img/plant-hand-icon.png" alt="icon">
+                                <img src="img/plant-hand-icon.png" alt="icon" class="mb-2" />
                                 <p>Organik</p>
                             </div>
                             <div class="icon icon-2 d-flex align-items-center justify-content-center flex-column">
-                                <img src="img/heart-icon.png" alt="icon">
+                                <img src="img/heart-icon.png" alt="icon" class="mb-2" />
                                 <p>Məmnuniyyət</p>
                             </div>
                             <div class="icon icon-3 d-flex align-items-center justify-content-center flex-column">
-                                <img src="img/plant-icon.png" alt="icon">
+                                <img src="img/plant-icon.png" alt="icon" class="mb-2" />
                                 <p>Lorem</p>
                             </div>
                             <div class="icon icon-4 d-flex align-items-center justify-content-center flex-column">
-                                <img src="img/protect-icon.png" alt="icon">
+                                <img src="img/protect-icon.png" alt="icon" class="mb-2" />
                                 <p>Yüksək keyfiyyət</p>
                             </div>
                         </div>
@@ -186,38 +242,47 @@
 
     <div class="section-4 d-flex align-items-center justify-content-center pt-3">
         <div class="container">
-            <img src="img/section-4-shape.png" class="shape">
+            <img src="img/section-4-shape.png" class="shape" />
             <div class="head d-flex align-items-center flex-column">
                 <h5 class="text-center">Bağlarımız</h5>
-                <img src="img/leaf-img.png" class="mt-2">
+                <img src="img/leaf-img.png" class="mt-2" />
             </div>
-            <div class="row mt-3 d-flex justify-content-between">
-                <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column">
+            <div class="row mt-1 d-flex justify-content-between">
+                <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column mt-4">
                     <div class="text-box">
-                        <h1>01</h1>
-                        <h3>BAĞ</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry’s standard dummy text ever since the 1500s.</p>
+                        <h1 class="mb-2">01</h1>
+                        <h3 class="mb-1">BAĞ</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry’s standard dummy
+                            text ever since the 1500s.
+                        </p>
                     </div>
-                    <img src="img/section-4-img-1.png">
+                    <img src="img/section-4-img-1.png" class="mt-2" />
                 </div>
-                <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column mt-4">
                     <div class="text-box order-lg-2">
-                        <h1>02</h1>
-                        <h3>BAĞ</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry’s standard dummy text ever since the 1500s.</p>
+                        <h1 class="mb-2">02</h1>
+                        <h3 class="mb-1">BAĞ</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry’s standard dummy
+                            text ever since the 1500s.
+                        </p>
                     </div>
-                    <img src="img/section-4-img-2.png" class="order-lg-1">
+                    <img src="img/section-4-img-2.png" class="order-lg-1 mb-2 mt-2" />
                 </div>
-                <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column mt-4">
                     <div class="text-box">
-                        <h1>03</h1>
-                        <h3>BAĞ</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry’s standard dummy text ever since the 1500s.</p>
+                        <h1 class="mb-2">03</h1>
+                        <h3 class="mb-1">BAĞ</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry’s standard dummy
+                            text ever since the 1500s.
+                        </p>
                     </div>
-                    <img src="img/section-4-img-3.png" />
+                    <img src="img/section-4-img-3.png" class="mt-2" />
                 </div>
             </div>
         </div>
@@ -227,12 +292,12 @@
 
     <!------------------ Section-5 start  ------------->
 
-    <div class="section-5 d-flex align-items-center justify-content-center pt-4 pb-4">
+    <div id="products" class="products section-5 d-flex align-items-center justify-content-center pt-4 pb-4">
         <img src="img/shape.png" class="shape" />
-        <div class="container-fluid d-flex justify-content-center align-items-center flex-column">
+        <div class="container-fluid d-flex justify-content-center align-items-center flex-column p-4">
             <div class="head d-flex align-items-center flex-column">
                 <h5 class="text-center">Məhsullarımız</h5>
-                <img src="img/leaf-img.png" class="mt-2">
+                <img src="img/leaf-img.png" class="mt-2" />
             </div>
             <ul class="links d-flex">
                 <li><a href="" class="link active">Hamısı</a></li>
@@ -242,36 +307,36 @@
                 <li><a href="" class="link">Digər</a></li>
             </ul>
             <div class="row d-flex justify-content-between align-items-center mt-3">
-                <div class="col-lg-2 rounded d-flex flex-column align-items-center">
-                    <img src="img/apple.png" alt="">
+                <div class="col-lg-2 col-md-2 mt-3 rounded d-flex flex-column align-items-center">
+                    <img src="img/apple.png" alt="" />
                     <div class="text-box d-flex flex-column align-items-center">
                         <h1>Alma</h1>
                         <p>5 <span>m</span></p>
                     </div>
                 </div>
-                <div class="col-lg-2 rounded d-flex flex-column align-items-center">
-                    <img src="img/plum.png" alt="">
+                <div class="col-lg-2 col-md-2 mt-3 rounded d-flex flex-column align-items-center">
+                    <img src="img/plum.png" alt="" />
                     <div class="text-box d-flex flex-column align-items-center">
                         <h1>Gavalı</h1>
                         <p>5 <span>m</span></p>
                     </div>
                 </div>
-                <div class="col-lg-2 rounded d-flex flex-column align-items-center">
-                    <img src="img/pear.png" alt="">
+                <div class="col-lg-2 col-md-2 mt-3 rounded d-flex flex-column align-items-center">
+                    <img src="img/pear.png" alt="" />
                     <div class="text-box d-flex flex-column align-items-center">
                         <h1>Armud</h1>
                         <p>5 <span>m</span></p>
                     </div>
                 </div>
-                <div class="col-lg-2 rounded d-flex flex-column align-items-center">
-                    <img src="img/cherry.png" alt="">
+                <div class="col-lg-2 col-md-2 mt-3 rounded d-flex flex-column align-items-center">
+                    <img src="img/cherry.png" alt="" />
                     <div class="text-box d-flex flex-column align-items-center">
                         <h1>Gilas</h1>
                         <p>5 <span>m</span></p>
                     </div>
                 </div>
-                <div class="col-lg-2 rounded d-flex flex-column align-items-center">
-                    <img src="img/walnut.png" alt="">
+                <div class="col-lg-2 col-md-2 mt-3 rounded d-flex flex-column align-items-center">
+                    <img src="img/walnut.png" alt="" />
                     <div class="text-box d-flex flex-column align-items-center">
                         <h1>Qoz</h1>
                         <p>5 <span>m</span></p>
@@ -279,36 +344,36 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-between align-items-center mt-3">
-                <div class="col-lg-2 rounded d-flex flex-column align-items-center">
-                    <img src="img/peach.png" alt="">
+                <div class="col-lg-2 col-md-2 mt-3 rounded d-flex flex-column align-items-center">
+                    <img src="img/peach.png" alt="" />
                     <div class="text-box d-flex flex-column align-items-center">
                         <h1>Şaftalı</h1>
                         <p>5 <span>m</span></p>
                     </div>
                 </div>
-                <div class="col-lg-2 rounded d-flex flex-column align-items-center">
-                    <img src="img/wheat.png" alt="">
+                <div class="col-lg-2 col-md-2 mt-3 rounded d-flex flex-column align-items-center">
+                    <img src="img/wheat.png" alt="" />
                     <div class="text-box d-flex flex-column align-items-center">
                         <h1>Taxıl</h1>
                         <p>5 <span>m</span></p>
                     </div>
                 </div>
-                <div class="col-lg-2 rounded d-flex flex-column align-items-center">
-                    <img src="img/orange.png" alt="">
+                <div class="col-lg-2 col-md-2 mt-3 rounded d-flex flex-column align-items-center">
+                    <img src="img/orange.png" alt="" />
                     <div class="text-box d-flex flex-column align-items-center">
                         <h1>Portağal</h1>
                         <p>5 <span>m</span></p>
                     </div>
                 </div>
-                <div class="col-lg-2 rounded d-flex flex-column align-items-center">
-                    <img src="img/plant.png" alt="">
+                <div class="col-lg-2 col-md-2 mt-3 rounded d-flex flex-column align-items-center">
+                    <img src="img/plant.png" alt="" />
                     <div class="text-box d-flex flex-column align-items-center">
-                        <h1>Müxtəlif tinqlər</h1>
+                        <h1>Tinqlər</h1>
                         <p>5 <span>m</span></p>
                     </div>
                 </div>
-                <div class="col-lg-2 rounded d-flex flex-column align-items-center">
-                    <img src="img/tomato.png" alt="">
+                <div class="col-lg-2 col-md-2 mt-3 rounded d-flex flex-column align-items-center">
+                    <img src="img/tomato.png" alt="" />
                     <div class="text-box d-flex flex-column align-items-center">
                         <h1>Pomidor</h1>
                         <p>5 <span>m</span></p>
@@ -322,39 +387,45 @@
 
     <!------------------ Section-6 start  ------------->
 
-    <div class="section-6 d-flex justify-content-center align-items-center">
+    <div id="blogs" class="blogs section-6 d-flex justify-content-center align-items-center">
         <img src="img/shape.png" class="shape" />
         <div class="container">
             <div class="head d-flex align-items-center flex-column mt-3">
                 <h5 class="text-center">Bloqlarımız</h5>
-                <img src="img/leaf-img.png" class="mt-2">
+                <img src="img/leaf-img.png" class="mt-2" />
             </div>
-            <div class="row d-flex justify-content-between">
-                <div class="col-lg-4 mt-lg-4">
-                    <img src="img/section-6-img-1.png" alt="">
+            <div class="row d-flex justify-content-between align-items-center mt-4 pt-2">
+                <div class="col-lg-3 mt-lg-5 rounded">
+                    <img src="img/section-6-img-1.png" alt="" />
                     <div class="text-box mt-2">
-                        <h1>Lorem İpsem Doler Sit Amet</h1>
-                        <p class="mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                            Ipsum has
-                            been the industry’s standard dummy text ever since the 1500s.</p>
+                        <h1>Lorem İpsum Dolor Sit Amet</h1>
+                        <p class="mt-2">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry’s standard dummy
+                            text ever since the 1500s.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <img src="img/section-6-img-2.png" alt="">
+                <div class="col-lg-3 rounded">
+                    <img src="img/section-6-img-2.png" alt="" />
                     <div class="text-box mt-2">
-                        <h1>Lorem İpsem Doler Sit Amet</h1>
-                        <p class="mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                            Ipsum has
-                            been the industry’s standard dummy text ever since the 1500s.</p>
+                        <h1>Lorem İpsum Dolor Sit Amet</h1>
+                        <p class="mt-2">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry’s standard dummy
+                            text ever since the 1500s.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-lg-4">
-                    <img src="img/section-6-img-3.png" alt="">
+                <div class="col-lg-3 mt-lg-5 rounded">
+                    <img src="img/section-6-img-3.png" alt="" />
                     <div class="text-box mt-2">
-                        <h1>Lorem İpsem Doler Sit Amet</h1>
-                        <p class="mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                            Ipsum has
-                            been the industry’s standard dummy text ever since the 1500s.</p>
+                        <h1>Lorem İpsum Dolor Sit Amet</h1>
+                        <p class="mt-2">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry’s standard dummy
+                            text ever since the 1500s.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -365,57 +436,67 @@
 
     <!------------------ Footer start  ------------->
 
-    <div class="footer d-flex align-items-end">
-        <div class="container-fluid d-flex align-items-center justify-content-center">
-            <div class="row d-flex justify-content-between">
-                <div class="col-lg-3 d-flex justify-content-center align-items-center">
-                    <img src="img/Logo.png" />
-                </div>
-                <div class="col-lg-7 d-flex justify-content-between ">
-                    <ul class="links">
-                        <li><a href="" class="link">Menyular</a></li>
-                        <li><a href="" class="link">Biz kimik?</a></li>
-                        <li><a href="" class="link">Bağlarımız</a></li>
-                        <li><a href="" class="link">Məhsullarımız</a></li>
-                        <li><a href="" class="link">Məhsullarımız</a></li>
-                        <li><a href="" class="link">Xidmətlərimiz</a></li>
-                        <li><a href="" class="link">Sosial məsuliyyət</a></li>
-                        <li><a href="" class="link">Əlaqə</a></li>
-                    </ul>
-                    <ul class="links">
-                        <li><a href="" class="link">Faydalı linklər</a></li>
-                        <li><a href="" class="link">Tez-tez soruşulanlar</a></li>
-                        <li><a href="" class="link">Karyera</a></li>
-                        <li><a href="" class="link">Xidmət şəbəkəsi</a></li>
-                    </ul>
-                    <ul class="links">
-                        <li><a href="" class="link">FAQ</a></li>
-                        <li><a href="" class="link">Təhlükəsizlik</a></li>
-                        <li><a href="" class="link">Şərtlər və qaydalar</a></li>
-                    </ul>
+    <footer id="footer" class="footer d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row d-flex ">
+                    <div class="col-lg-4">
+                        <div class="footer-logo d-flex justify-content-center align-items-center mt-5">
+                            <a href="">
+                                <img src="img/logo-white-footer.svg" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-3 mt-4">
+                        <div class="footer-links text-center">
+                            <h1>Xidmətlərimiz</h1>
+                            <ul>
+                                <li><a href="">Bağların salınması</a></li>
+                                <li><a href="">Texniki vasitələrin satışı və servisi</a></li>
+                                <li><a href="">Suvarma sistemləri</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex justify-content-center align-items-center mt-4">
+                        <div class="footer-links text-center">
+                            <h1>Menyular</h1>
+                            <ul>
+                                <li><a href="">Biz kimik?</a></li>
+                                <li><a href="">Bağlarımız</a></li>
+                                <li><a href="">Məhsullarımız</a></li>
+                                <li><a href="">Xidmətlərimiz</a></li>
+                                <li><a href="">Sosial məsuliyyət</a></li>
+                                <li><a href="">Əlaqə</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="footer-bottom text-center mt-3">
+                <h1 class="pt-2">© Copyright 2022</h1>
+            </div>
         </div>
-    </div>
+    </footer>
 
     <!------------------ Footer end  ------------->
 
 
 
 
-
-
-
-
-
-
-
-
-
     <!-------------- Bootstrap Js script  ----------------->
     <script src="bootstrap/bootstrap.min.js"></script>
-
-    <!-------------- Main Javascript Link  ----------------->
+    <!-------------- Swiper.JS Script ---------------->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-------------- Jquery Link  ----------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-------------- OwlCarousel Js Link  ----------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-------------- Main Javascript ----------------->
     <script src="js/main.js"></script>
 </body>
 

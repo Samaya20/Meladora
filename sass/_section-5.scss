@@ -1,6 +1,7 @@
 .section-5 {
     position: relative;
     overflow: hidden;
+    z-index: 1;
 
     .shape {
         position: absolute;
@@ -26,25 +27,28 @@
 
         .row {
             .col-lg-2 {
+                background-color: #fff;
+                border: 0.3px solid rgba(128, 128, 128, 0.268);
                 box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.084);
                 padding: 1rem 1.8rem !important;
-                // border-radius: 5px;
-                transition: all .3s ease-in-out;
+                transition: all .2s ease-in-out;
+                transform: scale(1);
                 cursor: pointer;
 
                 &:hover {
                     transform: scale(1.1);
+                    z-index: 999;
                 }
 
                 img {
-                    width: 170px;
+                    width: 100%;
                 }
 
                 .text-box {
                     width: 100% !important;
 
                     h1 {
-                        font-size: 16px;
+                        font-size: 20px;
                     }
 
                     p {
@@ -65,8 +69,37 @@
         .container-fluid {
             .links {
                 a {
-                    font-size: 17px !important;
+                    font-size: 16px !important;
                 }
+            }
+
+            .row{
+                .col-lg-2{
+                    img{
+                        width: 100px;
+                    }
+                
+                }
+             }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .section-5 {
+        .container-fluid {
+            .links {
+                a {
+                    font-size: 16px !important;
+                }
+            }
+
+            .row{
+               .col-lg-2{
+                   img{
+                       width: 100px;
+                   }
+               }
             }
         }
     }

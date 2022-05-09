@@ -1,0 +1,395 @@
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    .container {
+        .header-1 {
+            border-bottom: 1px solid #fff;
+            background-color: transparent;
+            padding: 0.2rem !important;
+            margin: 0 0.5rem !important;
+            transition: all 1s ease-in-out;
+
+            .mobile-number {
+                a {
+                    font-size: 18px;
+                    color: #fff;
+                    transition: all .3s ease-in-out;
+
+                    i {
+                        color: #91B40D;
+                    }
+
+                    &:hover {
+                        color: #91B40D;
+                    }
+                }
+            }
+
+            .social-icons {
+                .icon {
+                    padding: 5px !important;
+                    cursor: pointer;
+
+                    &:hover {
+                        a {
+                            color: #fff;
+
+                            i {
+                                transform: rotateY(360deg);
+                            }
+                        }
+                    }
+
+                    a {
+                        color: #91B40D;
+                        transition: all .3s ease-in-out;
+
+                        i {
+                            font-size: 22px;
+                            transition: all .4s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-2 {
+            background-color: transparent;
+            padding: 0.5rem !important;
+            margin: 0 0.5rem !important;
+            overflow: hidden;
+            transition: all 0.2s ease-in-out;
+
+
+            .header-2-nav {
+                .nav-links {
+                    width: 100%;
+                    position: relative;
+
+                    .nav-link {
+                        a {
+                            font-size: 20px;
+                            font-family: 'Radio Canada';
+                            font-weight: 400;
+                            color: #fff;
+                            margin-right: 20px !important;
+                            padding: 0.2rem !important;
+                            position: relative;
+                            transition: all .3s ease-in-out;
+
+                            &::before {
+                                position: absolute;
+                                content: '';
+                                top: 0;
+                                right: 0;
+                                width: 0%;
+                                height: 1px;
+                                border-radius: 2px;
+                                background-color: #91B40D;
+                                transition: all .3s ease-in-out;
+                            }
+
+
+                            &::after {
+                                position: absolute;
+                                content: '';
+                                top: 100%;
+                                left: 0%;
+                                width: 0%;
+                                height: 1px;
+                                border-radius: 2px;
+                                background-color: #91B40D;
+                                transform: translateX(-50%);
+                                transition: all .3s ease-in-out;
+                            }
+
+                            &:hover {
+                                color: #91B40D;
+
+                                &::after {
+                                    left: 50%;
+                                    width: 100%;
+                                }
+
+                                &::before {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+
+            }
+
+            .header-mobile-icon {
+                display: none;
+                color: #fff;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+
+                i {
+                    font-size: 35px;
+                }
+
+                &:hover {
+                    color: #91B40D;
+                }
+            }
+
+            input {
+                width: 50px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: white;
+                background-image: url('../img/search-icon.png');
+                background-position: 10px 10px;
+                background-repeat: no-repeat;
+                padding: 10px 20px 13px 40px;
+                caret-color: #c0f012;
+                text-transform: capitalize;
+                cursor: pointer;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+
+                &:focus {
+                    width: 250px;
+                    outline: none;
+                }
+            }
+        }
+
+        .header-mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 999;
+            transition: all .3s ease-in-out;
+            visibility: hidden;
+            opacity: 0;
+
+            .header-mobile-wrapper {
+                width: 80%;
+                min-height: 100vh;
+                float: right;
+                background: #1A5221;
+
+                .header-mobile-head {
+                    width: 100%;
+                    border-bottom: 1px solid #FFBF00;
+
+                    .menu-close-btn {
+                        color: #fff;
+                        cursor: pointer;
+                        transition: all .3s ease-in-out;
+
+                        i {
+                            font-size: 40px;
+                        }
+
+                        &:hover {
+                            color: #FFBF00;
+                        }
+                    }
+                }
+
+                .header-mobile-body {
+                    .header-mobile-link {
+                        margin: 21px !important;
+
+                        a {
+                            color: #fff;
+                            padding: 0.3rem 0 !important;
+                            position: relative;
+                            transition: all .3s ease-in-out;
+
+                            &::before {
+                                position: absolute;
+                                content: '';
+                                top: 0;
+                                right: 0;
+                                width: 0%;
+                                height: 1px;
+                                border-radius: 2px;
+                                background-color: #FFBF00;
+                                transition: all .3s ease-in-out;
+                            }
+
+
+                            &::after {
+                                position: absolute;
+                                content: '';
+                                top: 100%;
+                                left: 0%;
+                                width: 0%;
+                                height: 1px;
+                                border-radius: 2px;
+                                background-color: #FFBF00;
+                                transform: translateX(-50%);
+                                transition: all .3s ease-in-out;
+                            }
+
+                            &:hover {
+                                color: #FFBF00;
+
+                                &::after {
+                                    left: 50%;
+                                    width: 100%;
+                                }
+
+                                &::before {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .header-mobile-foot {
+                    width: 100%;
+                    border-top: 1px solid #FFBF00;
+
+                    .mobile-social-icons {
+                        width: 50%;
+
+                        .mobile-social-icon {
+                            i {
+                                color: #fff;
+                                transition: all .4s ease-in-out;
+                            }
+
+                            &:hover {
+                                a {
+                                    i {
+                                        color: #FFBF00;
+                                        transform: rotateY(360deg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sticky {
+    background: #1A5221 !important;
+    border-bottom: 5px solid #FFBF00;
+    border-left: 5px solid #FFBF00;
+    border-right: 5px solid #FFBF00;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    animation: fade .3s ease-in-out;
+
+    .header-2-nav {
+        .nav-links {
+            .nav-link {
+                a {
+
+                    &::before {
+                        background-color: #FFBF00 !important;
+                    }
+
+
+                    &::after {
+                        background-color: #FFBF00 !important;
+                    }
+
+                    &:hover {
+                        color: #FFBF00 !important;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+    .header-1 {
+        opacity: 0;
+    }
+
+    .header-2 {
+        opacity: 0;
+    }
+
+    @keyframes fade {
+        0% {
+            transform: translateY(-40px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
+
+
+
+@media (max-width:1407.20px) {
+    .header {
+        .container {
+            .header-2 {
+                .header-2-nav {
+                    display: none !important;
+                }
+
+                .header-mobile-icon {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .active {
+        right: 0 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Scrollbar CSS
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFBF00;
+    border-radius: 30px;
+}

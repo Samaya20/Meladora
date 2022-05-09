@@ -1,7 +1,7 @@
 .section-4 {
     overflow: hidden;
     .container {
-        padding: 0.5rem !important;
+        padding: 1.7rem !important;
         position: relative;
 
         .shape {
@@ -15,6 +15,7 @@
             .col-lg-3 {
                 img {
                     width: 100% !important;
+                    height: 330px !important;
                     transition: all .3s ease-in-out;
                     cursor: pointer;
 
@@ -28,15 +29,20 @@
                     h1 {
                         color: #7C7A7A;
                         font-family: 'Playfair Display';
+                        font-size: 50px;
                     }
 
                     h3 {
-                        font-size: 30px !important;
+                        font-size: 25px !important;
+                        font-family:  'Radio Canada';
+                        font-weight: 300;
                     }
 
                     p {
                         font-size: 20px;
                         color: #7C7A7A;
+                        font-family:  'Radio Canada';
+                        font-weight: 300;
                     }
                 }
             }
