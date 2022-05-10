@@ -1,3 +1,12 @@
+// ---- Loader ----
+
+$(window).on('load', function () {
+    $(".loader").fadeOut(1000);
+    $(".reveal").fadeIn(1000);
+})
+
+
+
 // ---- Navbar Scroll----
 
 $(document).ready(function () {
