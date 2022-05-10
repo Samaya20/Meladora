@@ -1,37 +1,45 @@
 // ---- Navbar Scroll----
 
-$(document).ready(function(){
-    window.addEventListener('scroll',function(){
+$(document).ready(function () {
+    window.addEventListener('scroll', function () {
         $('.header-2').toggleClass('sticky', window.scrollY > 25);
     })
 })
 
 // ---- Mobile Menu ----
 
-$(document).ready(function(){
-    $('.bar').click(function(){
+$(document).ready(function () {
+    $('.bar').click(function () {
         $('#mobile-menu').toggleClass('active');
+    })
+})
+
+// ---- Search ----
+
+$(document).ready(function () {
+    $('.search-open-btn').click(function () {
+        $('#search-page').toggleClass('show');
     })
 })
 
 // ---- Carousel ----
 
 $('.owl-carousel').owlCarousel({
-    loop:true,
-    dots:true,
-    nav:false,
-    responsive:{
-        0:{
-            items:1
+    loop: true,
+    dots: true,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1
         },
-        600:{
-            items:2
+        600: {
+            items: 2
         },
-        700:{
-            items:2
+        700: {
+            items: 2
         },
-        1000:{
-            items:3
+        1000: {
+            items: 3
         }
     }
 })

@@ -72,11 +72,13 @@
                         <li class="nav-link"><a href="">Xidmətlərimiz</a></li>
                         <li class="nav-link"><a href="">Sosial məsuliyyət</a></li>
                         <li class="nav-link"><a href="">Əlaqə</a></li>
+                        <li class="nav-link search-open-btn"> <img src="img/search-icon.png" alt="search"
+                                id="search-button"></li>
                     </ul>
-                    <input type="text" name="search" placeholder="Axtar.." />
                 </nav>
-                <div class="header-mobile-icon bar">
-                    <i class="fa-solid fa-bars"></i>
+                <div class="header-mobile-icon">
+                    <img src="img/search-icon.png" class="me-2 search-open-btn">
+                    <i class="fa-solid fa-bars bar"></i>
                 </div>
             </div>
             <div class="header-mobile-menu" id="mobile-menu">
@@ -132,6 +134,15 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="search-page" id="search-page">
+                <div class="search-close-btn search-open-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <form>
+                    <input type="text" placeholder="Axtar.." class="ps-3 pt-2 pb-2">
+                    <button class="border-0">Axtar</button>
+                </form>
             </div>
         </div>
     </header>

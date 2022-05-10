@@ -113,7 +113,7 @@ table {
 .header .container .header-2 {
   background-color: transparent;
   padding: 0.5rem !important;
-  margin: 0 0.5rem !important;
+  margin: 0 0.5rem;
   overflow: hidden;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -177,19 +177,29 @@ table {
   width: 100%;
 }
 
+.header .container .header-2 .header-2-nav .nav-links .nav-link #search-button {
+  width: 25px;
+  cursor: pointer;
+}
+
 .header .container .header-2 .header-mobile-icon {
   display: none;
   color: #fff;
+}
+
+.header .container .header-2 .header-mobile-icon img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.header .container .header-2 .header-mobile-icon i {
+  font-size: 35px;
   cursor: pointer;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
-.header .container .header-2 .header-mobile-icon i {
-  font-size: 35px;
-}
-
-.header .container .header-2 .header-mobile-icon:hover {
+.header .container .header-2 .header-mobile-icon i:hover {
   color: #91B40D;
 }
 
@@ -334,6 +344,61 @@ table {
           transform: rotateY(360deg);
 }
 
+.header .container .search-page {
+  background: rgba(0, 0, 0, 0.526);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header .container .search-page .search-close-btn {
+  position: absolute;
+  top: 7%;
+  right: 7%;
+}
+
+.header .container .search-page .search-close-btn i {
+  font-size: 60px;
+  color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.header .container .search-page .search-close-btn i:hover {
+  color: #FFBF00;
+}
+
+.header .container .search-page form input:focus {
+  outline: none !important;
+}
+
+.header .container .search-page form button {
+  padding: 0.7rem !important;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.header .container .search-page form button:hover {
+  background-color: #1A5221;
+  color: #FFBF00;
+}
+
 .sticky {
   background: #1A5221 !important;
   border-bottom: 5px solid #FFBF00;
@@ -343,6 +408,7 @@ table {
   top: 0;
   right: 0;
   left: 0;
+  margin: 0;
   z-index: 999;
   -webkit-animation: fade .3s ease-in-out;
           animation: fade .3s ease-in-out;
@@ -364,14 +430,10 @@ table {
   opacity: 0;
 }
 
-.sticky .header-2 {
-  opacity: 0;
-}
-
 @-webkit-keyframes fade {
   0% {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
   100% {
     -webkit-transform: translateY(0);
@@ -381,8 +443,8 @@ table {
 
 @keyframes fade {
   0% {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
   100% {
     -webkit-transform: translateY(0);
@@ -390,7 +452,7 @@ table {
   }
 }
 
-@media (max-width: 1407.2px) {
+@media (max-width: 1227px) {
   .header .container .header-2 .header-2-nav {
     display: none !important;
   }
@@ -401,6 +463,37 @@ table {
     right: 0 !important;
     opacity: 1 !important;
     visibility: visible !important;
+  }
+}
+
+.show {
+  visibility: visible !important;
+  opacity: 1 !important;
+  -webkit-animation: animation1 .3s ease-in-out;
+          animation: animation1 .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+@-webkit-keyframes animation1 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes animation1 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
