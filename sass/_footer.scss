@@ -36,7 +36,8 @@
                             }
 
                             &:hover {
-                                color:#91B40D ;
+                                color: #91B40D;
+
                                 &::after {
                                     width: 100%;
                                 }
@@ -54,9 +55,10 @@
             }
         }
 
-        .footer-bottom{
+        .footer-bottom {
             border-top: 1px solid #fff;
-            h1{
+
+            h1 {
                 color: rgb(154, 154, 154);
                 font-size: 20px;
             }

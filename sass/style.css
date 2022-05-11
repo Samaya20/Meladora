@@ -70,10 +70,11 @@ table {
 }
 
 .header .container .header-1 .mobile-number a {
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  font-family: 'Radio Canada';
 }
 
 .header .container .header-1 .mobile-number a i {
@@ -233,7 +234,7 @@ table {
   right: -100%;
   width: 100%;
   height: 100vh;
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: hidden;
   background: rgba(0, 0, 0, 0.6);
   z-index: 999;
@@ -385,12 +386,17 @@ table {
   color: #FFBF00;
 }
 
+.header .container .search-page form input {
+  border-radius: 10px;
+}
+
 .header .container .search-page form input:focus {
   outline: none !important;
 }
 
 .header .container .search-page form button {
-  padding: 0.7rem !important;
+  border-radius: 10px;
+  padding: 0.7rem 1rem !important;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -459,6 +465,24 @@ table {
   }
   .header .container .header-2 .header-mobile-icon {
     display: block;
+  }
+  .header .container .search-page form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .container .search-page form button {
+    margin-top: 10px;
   }
   .active {
     right: 0 !important;
