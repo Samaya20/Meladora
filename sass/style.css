@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -70,11 +72,12 @@ table {
 }
 
 .header .container .header-1 .mobile-number a {
-  font-size: 15px;
+  font-size: 16px;
   color: #fff;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  font-family: 'Radio Canada';
+  font-family: 'Cormorant Garamond';
+  font-weight: medium;
 }
 
 .header .container .header-1 .mobile-number a i {
@@ -126,9 +129,9 @@ table {
 }
 
 .header .container .header-2 .header-2-nav .nav-links .nav-link a {
-  font-size: 20px;
-  font-family: 'Radio Canada';
-  font-weight: 400;
+  font-size: 22px;
+  font-family: 'Cormorant Garamond';
+  font-weight: medium;
   color: #fff;
   margin-right: 20px !important;
   padding: 0.2rem !important;
@@ -276,6 +279,8 @@ table {
 }
 
 .header .container .header-mobile-menu .header-mobile-wrapper .header-mobile-body .header-mobile-link a {
+  font-size: 20px;
+  font-family: 'Cormorant Garamond';
   color: #fff;
   padding: 0.3rem 0 !important;
   position: relative;
@@ -334,6 +339,7 @@ table {
 }
 
 .header .container .header-mobile-menu .header-mobile-wrapper .header-mobile-foot .mobile-social-icons .mobile-social-icon i {
+  font-size: 20px;
   color: #fff;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -387,15 +393,36 @@ table {
 }
 
 .header .container .search-page form input {
-  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #fff;
+  caret-color: #fff;
+  font-family: 'Cormorant Garamond';
+  font-weight: 300;
 }
 
 .header .container .search-page form input:focus {
   outline: none !important;
 }
 
+.header .container .search-page form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.header .container .search-page form input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.header .container .search-page form input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.header .container .search-page form input::placeholder {
+  color: #fff;
+}
+
 .header .container .search-page form button {
-  border-radius: 10px;
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
   padding: 0.7rem 1rem !important;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -403,7 +430,7 @@ table {
 
 .header .container .search-page form button:hover {
   background-color: #1A5221;
-  color: #FFBF00;
+  color: #fff;
 }
 
 .sticky {
@@ -456,38 +483,6 @@ table {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
-}
-
-@media (max-width: 1227px) {
-  .header .container .header-2 .header-2-nav {
-    display: none !important;
-  }
-  .header .container .header-2 .header-mobile-icon {
-    display: block;
-  }
-  .header .container .search-page form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header .container .search-page form button {
-    margin-top: 10px;
-  }
-  .active {
-    right: 0 !important;
-    opacity: 1 !important;
-    visibility: visible !important;
   }
 }
 
@@ -642,12 +637,16 @@ table {
 
 .banner .carousel .container .item .text-box h1 {
   color: #fff;
-  font-size: 24px;
+  font-size: 32px;
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
 }
 
 .banner .carousel .container .item .text-box a {
   color: #fff;
-  font-size: 18px;
+  font-size: 22px;
+  font-family: 'Cormorant Garamond';
+  font-weight: medium;
 }
 
 .banner .carousel .container .owl-theme .owl-dots .owl-dot.active span {
@@ -680,21 +679,21 @@ table {
 }
 
 .section-3 .container-fluid .row .text-box {
-  padding: 0.8rem 0.3rem 0.3rem 0.3rem !important;
+  padding: 0.8rem 0.6rem 0.3rem 0.6rem !important;
   background-color: #F5F5F5;
 }
 
 .section-3 .container-fluid .row .text-box .text h1 {
-  font-size: 30px !important;
-  font-family: 'Radio Canada';
-  font-weight: 300;
+  font-size: 36px !important;
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
 }
 
 .section-3 .container-fluid .row .text-box .text p {
   font-size: 16px !important;
   padding: 0 1rem !important;
-  font-family: 'Radio Canada';
-  font-weight: 300;
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
 }
 
 .section-3 .container-fluid .row .text-box .text img {
@@ -706,29 +705,17 @@ table {
 }
 
 .section-3 .container-fluid .row .text-box .icon-box .icons .icon img {
-  width: 30px !important;
+  width: 25px !important;
 }
 
 .section-3 .container-fluid .row .text-box .icon-box .icons .icon p {
-  font-size: 15px;
+  font-size: 16px;
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
 }
 
 .section-3 .container-fluid .row .text-box .icon-box .icon:not(:first-child) {
-  margin-left: 30px !important;
-}
-
-@media (max-width: 992px) {
-  .section-3 .container-fluid .row .section-3-img {
-    height: 360px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .section-3 .container-fluid .row .text-box .text p {
-    font-size: 16px;
-  }
-  .section-3 .container-fluid .row .text-box .icon-box .icons {
-    padding-bottom: 30px;
-  }
+  margin-left: 20px !important;
 }
 
 .section-4 {
@@ -747,6 +734,12 @@ table {
   left: 40%;
 }
 
+.section-4 .container h5 {
+  font-family: 'Cormorant Garamond' !important;
+  font-size: 36px;
+  font-weight: 600;
+}
+
 .section-4 .container .row .col-lg-3 img {
   width: 100% !important;
   height: 330px !important;
@@ -762,21 +755,21 @@ table {
 
 .section-4 .container .row .col-lg-3 .text-box h1 {
   color: #7C7A7A;
-  font-family: 'Playfair Display';
-  font-size: 50px;
+  font-family: 'Cormorant Garamond';
+  font-size: 120px;
 }
 
 .section-4 .container .row .col-lg-3 .text-box h3 {
-  font-size: 25px !important;
-  font-family: 'Radio Canada';
+  font-size: 30px !important;
+  font-family: 'Cormorant Garamond';
   font-weight: 300;
 }
 
 .section-4 .container .row .col-lg-3 .text-box p {
-  font-size: 20px;
+  font-size: 16px;
   color: #7C7A7A;
-  font-family: 'Radio Canada';
-  font-weight: 300;
+  font-family: 'Cormorant Garamond';
+  font-weight: 500;
 }
 
 .section-5 {
@@ -795,11 +788,18 @@ table {
   padding-top: 100px !important;
 }
 
+.section-5 .container-fluid h5 {
+  font-family: 'Cormorant Garamond';
+  font-size: 30px;
+  font-weight: 600;
+}
+
 .section-5 .container-fluid .links a {
   font-size: 22px !important;
-  padding: 0px 5px !important;
+  padding: 0px 8px !important;
   color: #000;
-  font-weight: 500;
+  font-weight: 700;
+  font-family: 'Cormorant Garamond';
 }
 
 .section-5 .container-fluid .links .active {
@@ -834,33 +834,18 @@ table {
 }
 
 .section-5 .container-fluid .row .col-lg-2 .text-box h1 {
-  font-size: 20px;
+  font-size: 25px;
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
 }
 
 .section-5 .container-fluid .row .col-lg-2 .text-box p {
-  font-size: 20px;
+  font-size: 22px;
+  font-family: 'Charm';
 }
 
 .section-5 .container-fluid .row .col-lg-2 .text-box span {
   color: #91B40D;
-}
-
-@media (max-width: 992px) {
-  .section-5 .container-fluid .links a {
-    font-size: 16px !important;
-  }
-  .section-5 .container-fluid .row .col-lg-2 img {
-    width: 100px;
-  }
-}
-
-@media (min-width: 768px) {
-  .section-5 .container-fluid .links a {
-    font-size: 16px !important;
-  }
-  .section-5 .container-fluid .row .col-lg-2 img {
-    width: 100px;
-  }
 }
 
 .section-6 {
@@ -876,6 +861,12 @@ table {
 
 .section-6 .container {
   padding: 2rem 2rem !important;
+}
+
+.section-6 .container h5 {
+  font-family: 'Cormorant Garamond';
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .section-6 .container .row .col-lg-3 {
@@ -901,14 +892,14 @@ table {
 
 .section-6 .container .row .col-lg-3 .text-box h1 {
   font-size: 20px;
-  font-family: 'Radio Canada';
-  font-weight: 300;
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
   color: #2F2A2A;
 }
 
 .section-6 .container .row .col-lg-3 .text-box p {
-  font-family: 'Radio Canada';
-  font-weight: 300;
+  font-family: 'Cormorant Garamond';
+  font-weight: 400;
   font-size: 16px;
   color: #7C7A7A;
 }
@@ -932,6 +923,7 @@ table {
   position: relative;
   padding: 5px !important;
   font-size: 18px;
+  font-family: 'Cormorant Garamond';
   color: #fff;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -962,7 +954,9 @@ table {
 
 .footer .container .footer-top .row .footer-links h1 {
   color: #fff;
-  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
   margin-bottom: 5px !important;
 }
 
@@ -973,5 +967,64 @@ table {
 .footer .container .footer-bottom h1 {
   color: #9a9a9a;
   font-size: 20px;
+  font-family: 'Cormorant Garamond';
+}
+
+@media (min-width: 768px) {
+  .section-5 .container-fluid .links a {
+    font-size: 16px !important;
+  }
+  .section-5 .container-fluid .row .col-lg-2 img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-3 .container-fluid .row .section-3-img {
+    height: 360px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section-3 .container-fluid .row .text-box .text p {
+    font-size: 16px;
+  }
+  .section-3 .container-fluid .row .text-box .icon-box .icons {
+    padding-bottom: 30px;
+  }
+  .section-5 .container-fluid .links a {
+    font-size: 16px !important;
+  }
+  .section-5 .container-fluid .row .col-lg-2 img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 1227px) {
+  .header .container .header-2 .header-2-nav {
+    display: none !important;
+  }
+  .header .container .header-2 .header-mobile-icon {
+    display: block;
+  }
+  .header .container .search-page form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .container .search-page form button {
+    margin-top: 10px;
+  }
+  .active {
+    right: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,104 @@
+@media (min-width:768px) {
+    .section-5 {
+        .container-fluid {
+            .links {
+                a {
+                    font-size: 16px !important;
+                }
+            }
+
+            .row {
+                .col-lg-2 {
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:992px) {
+    .section-3 {
+        .container-fluid {
+            .row {
+                .section-3-img {
+                    height: 360px;
+                    object-fit: cover;
+                }
+
+                .text-box {
+                    .text {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .icon-box {
+                        .icons {
+                            padding-bottom: 30px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .section-5 {
+        .container-fluid {
+            .links {
+                a {
+                    font-size: 16px !important;
+                }
+            }
+
+            .row {
+                .col-lg-2 {
+                    img {
+                        width: 100px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:1227px) {
+    .header {
+        .container {
+            .header-2 {
+                .header-2-nav {
+                    display: none !important;
+                }
+
+                .header-mobile-icon {
+                    display: block;
+                }
+            }
+
+            .search-page {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    // align-items: center;
+
+                    button {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .active {
+        right: 0 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}

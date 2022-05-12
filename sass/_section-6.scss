@@ -11,6 +11,12 @@
    .container {
       padding: 2rem 2rem !important;
 
+      h5 {
+         font-family: 'Cormorant Garamond';
+         font-size: 30px;
+         font-weight: 600;
+      }
+
       .row {
          .col-lg-3 {
             background-color: rgb(244, 243, 243);
@@ -32,14 +38,14 @@
             .text-box {
                h1 {
                   font-size: 20px;
-                  font-family: 'Radio Canada';
-                  font-weight: 300;
+                  font-family: 'Cormorant Garamond';
+                  font-weight: bold;
                   color: #2F2A2A;
                }
 
                p {
-                  font-family: 'Radio Canada';
-                  font-weight: 300;
+                  font-family: 'Cormorant Garamond';
+                  font-weight: 400;
                   font-size: 16px;
                   color: #7C7A7A;
                }

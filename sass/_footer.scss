@@ -19,6 +19,7 @@
                             position: relative;
                             padding: 5px !important;
                             font-size: 18px;
+                            font-family: 'Cormorant Garamond';
                             color: #fff;
                             transition: all .3s ease-in-out;
 
@@ -48,7 +49,9 @@
 
                     h1 {
                         color: #fff;
-                        font-weight: 600;
+                        font-size: 20px;
+                        font-family: 'Cormorant Garamond';
+                        font-weight: bold;
                         margin-bottom: 5px !important;
                     }
                 }
@@ -61,6 +64,7 @@
             h1 {
                 color: rgb(154, 154, 154);
                 font-size: 20px;
+                font-family: 'Cormorant Garamond';
             }
         }
     }

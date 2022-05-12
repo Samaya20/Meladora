@@ -10,6 +10,11 @@
             top: 68%;
             left: 40%;
         }
+        h5{
+            font-family: 'Cormorant Garamond' !important;
+            font-size: 36px;
+            font-weight: 600;
+        }
 
         .row {
             .col-lg-3 {
@@ -28,21 +33,21 @@
 
                     h1 {
                         color: #7C7A7A;
-                        font-family: 'Playfair Display';
-                        font-size: 50px;
+                        font-family: 'Cormorant Garamond';
+                        font-size: 120px;
                     }
 
                     h3 {
-                        font-size: 25px !important;
-                        font-family:  'Radio Canada';
+                        font-size: 30px !important;
+                        font-family:  'Cormorant Garamond';
                         font-weight: 300;
                     }
 
                     p {
-                        font-size: 20px;
+                        font-size: 16px;
                         color: #7C7A7A;
-                        font-family:  'Radio Canada';
-                        font-weight: 300;
+                        font-family:  'Cormorant Garamond';
+                        font-weight: 500;
                     }
                 }
             }

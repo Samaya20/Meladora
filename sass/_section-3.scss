@@ -16,23 +16,23 @@
 
 
                 .text-box {
-                    padding: 0.8rem 0.3rem 0.3rem 0.3rem !important;
+                    padding: 0.8rem 0.6rem 0.3rem 0.6rem !important;
                     background-color: #F5F5F5;
 
 
                     .text {
                         h1 {
-                            font-size: 30px !important;
-                            font-family:  'Radio Canada';
-                            font-weight: 300;
+                            font-size: 36px !important;
+                            font-family:  'Cormorant Garamond';
+                            font-weight: bold;
 
                         }
 
                         p {
                             font-size: 16px !important;
                             padding: 0 1rem !important;
-                            font-family:  'Radio Canada';
-                            font-weight: 300;
+                            font-family:  'Cormorant Garamond';
+                            font-weight: bold;
                         }
 
                         img {
@@ -47,16 +47,18 @@
 
                         .icons .icon {
                             img {
-                                width: 30px !important;
+                                width: 25px !important;
                             }
 
                             p {
-                                font-size: 15px;
+                                font-size: 16px;
+                                font-family: 'Cormorant Garamond';
+                                font-weight: bold;
                             }
                         }
 
                         .icon:not(:first-child) {
-                            margin-left: 30px !important;
+                            margin-left: 20px !important;
                         }
                     }
                 }
@@ -65,30 +67,4 @@
     }
 
 
-    @media (max-width:992px){
-        .section-3{
-            .container-fluid{
-                .row{
-                    .section-3-img{
-                        height: 360px;
-                        object-fit: cover;
-                    }
-
-                    .text-box{
-                        .text{
-                            p{
-                                font-size: 16px;
-                            }
-                        }
-
-                        .icon-box {
-                           .icons{
-                            padding-bottom: 30px;
-                           }
-                        }
-                    }
-                }
-
-            }
-        }
-    }
+   

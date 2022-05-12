@@ -15,10 +15,11 @@
 
             .mobile-number {
                 a {
-                    font-size: 15px;
+                    font-size: 16px;
                     color: #fff;
                     transition: all .3s ease-in-out;
-                    font-family: 'Radio Canada';
+                    font-family: 'Cormorant Garamond';
+                    font-weight: medium;
 
                     i {
                         color: #91B40D;
@@ -73,9 +74,9 @@
 
                     .nav-link {
                         a {
-                            font-size: 20px;
-                            font-family: 'Radio Canada';
-                            font-weight: 400;
+                            font-size: 22px;
+                            font-family: 'Cormorant Garamond';
+                            font-weight: medium;
                             color: #fff;
                             margin-right: 20px !important;
                             padding: 0.2rem !important;
@@ -221,6 +222,8 @@
                         margin: 21px !important;
 
                         a {
+                            font-size: 20px;
+                            font-family: 'Cormorant Garamond';
                             color: #fff;
                             padding: 0.3rem 0 !important;
                             position: relative;
@@ -277,6 +280,7 @@
 
                         .mobile-social-icon {
                             i {
+                                font-size: 20px;
                                 color: #fff;
                                 transition: all .4s ease-in-out;
                             }
@@ -329,21 +333,30 @@
 
             form {
                 input {
-                    border-radius: 10px;
+                    background: transparent;
+                    border: 1px solid #fff;
+                    caret-color: #fff;
+                    font-family: 'Cormorant Garamond';
+                    font-weight: 300;
 
                     &:focus {
                         outline: none !important;
                     }
+
+                    &::placeholder {
+                        color: #fff;
+                    }
                 }
 
                 button {
-                    border-radius: 10px;
+                    font-family: 'Cormorant Garamond';
+                    font-weight: bold;
                     padding: 0.7rem 1rem !important;
                     transition: all .3s ease-in-out;
 
                     &:hover {
                         background-color: #1A5221;
-                        color: #FFBF00;
+                        color: #fff;
                     }
                 }
             }
@@ -401,45 +414,6 @@
 
     100% {
         transform: translateY(0);
-    }
-}
-
-
-
-
-
-@media (max-width:1227px) {
-    .header {
-        .container {
-            .header-2 {
-                .header-2-nav {
-                    display: none !important;
-                }
-
-                .header-mobile-icon {
-                    display: block;
-                }
-            }
-
-            .search-page {
-                form {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-
-                    button {
-                        margin-top: 10px;
-                    }
-                }
-            }
-        }
-    }
-
-    .active {
-        right: 0 !important;
-        opacity: 1 !important;
-        visibility: visible !important;
     }
 }
 
