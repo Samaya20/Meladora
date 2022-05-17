@@ -20,19 +20,19 @@
 
 
 @media (max-width:992px) {
-    .about-banner{
+    .about-banner {
         position: relative;
         height: 500px;
         padding-bottom: 130px !important;
-    
+
         .banner-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position:center;
+            object-position: center;
         }
 
-        .leafs{
+        .leafs {
             width: 200px;
         }
 
@@ -79,6 +79,14 @@
                     }
 
                 }
+            }
+        }
+    }
+
+    .introduction-section-3 {
+        .row {
+            .text-box {
+                width: 70% !important;
             }
         }
     }

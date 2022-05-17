@@ -1407,6 +1407,9 @@ table {
   .section-5 .container-fluid .row .col-lg-2 img {
     width: 100px;
   }
+  .introduction-section-3 .row .text-box {
+    width: 70% !important;
+  }
 }
 
 @media (max-width: 1227px) {
