@@ -1,70 +1,201 @@
-    .section-3 {
+// ----- Home Page -----   
+.section-3 {
 
-        overflow: hidden;
+    overflow: hidden;
 
-        .container-fluid {
-            position: relative;
+    .container-fluid {
+        position: relative;
 
-            .shape {
-                width: 300px;
-                position: absolute !important;
-                top: 63%;
-                left: 36%;
-            }
+        .shape {
+            width: 300px;
+            position: absolute !important;
+            top: 63%;
+            left: 36%;
+        }
 
-            .row {
-
-
-                .text-box {
-                    padding: 0.8rem 0.6rem 0.3rem 0.6rem !important;
-                    background-color: #F5F5F5;
+        .row {
 
 
-                    .text {
-                        h1 {
-                            font-size: 36px !important;
-                            font-family:  'Cormorant Garamond';
-                            font-weight: bold;
+            .text-box {
+                padding: 0.8rem 0.6rem 0.3rem 0.6rem !important;
+                background-color: #F5F5F5;
 
+
+                .text {
+                    h1 {
+                        font-size: 36px !important;
+                        font-family: 'Cormorant Garamond';
+                        font-weight: bold;
+
+                    }
+
+                    p {
+                        font-size: 16px !important;
+                        padding: 0 1rem !important;
+                        font-family: 'Cormorant Garamond';
+                        font-weight: bold;
+                    }
+
+                    img {
+                        width: 200px !important;
+                    }
+                }
+
+                .icon-box {
+                    img {
+                        width: 300px;
+                    }
+
+                    .icons .icon {
+                        img {
+                            width: 25px !important;
                         }
 
                         p {
-                            font-size: 16px !important;
-                            padding: 0 1rem !important;
-                            font-family:  'Cormorant Garamond';
+                            font-size: 16px;
+                            font-family: 'Cormorant Garamond';
                             font-weight: bold;
-                        }
-
-                        img {
-                            width: 200px !important;
                         }
                     }
 
-                    .icon-box {
-                        img {
-                            width: 300px;
-                        }
-
-                        .icons .icon {
-                            img {
-                                width: 25px !important;
-                            }
-
-                            p {
-                                font-size: 16px;
-                                font-family: 'Cormorant Garamond';
-                                font-weight: bold;
-                            }
-                        }
-
-                        .icon:not(:first-child) {
-                            margin-left: 20px !important;
-                        }
+                    .icon:not(:first-child) {
+                        margin-left: 20px !important;
                     }
                 }
             }
         }
     }
+}
 
+// ----- About Page ----
 
-   
+.about-section-3 {
+    .container {
+        padding: 0 1rem !important;
+
+        .row {
+            .text-box {
+                .title {
+                    h1 {
+                        font-size: 48px;
+                        font-weight: bold;
+                        font-family: 'Cormorant Garamond' !important;
+                    }
+
+                    img {
+                        width: 40%;
+                    }
+                }
+
+                p {
+                    font-family: 'Cormorant Garamond' !important;
+                    font-size: 15px;
+                }
+            }
+
+            .icon-box {
+                .leaf {
+                    width: 70%;
+                }
+
+                .icon {
+                    margin: 11px !important;
+
+                    p {
+                        font-weight: bold;
+                        font-size: 11px;
+                        font-family: 'Cormorant Garamond' !important;
+                    }
+                }
+
+            }
+
+            .about-image-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// ----- Contact Page -----
+
+.contact-section-3 {
+    .container {
+        .row {
+            border: 1px solid rgba(0, 0, 0, 0.219);
+
+            form {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                    padding: 15px !important;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    caret-color: rgb(19, 191, 19);
+                    border: 0;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.379);
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    padding: 15px !important;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                button {
+                    font-size: 20px;
+                    padding: 10px 35px;
+                    background: #91B40D;
+                    border: none;
+                    color: #fff;
+                    transition: all .3s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(0.9);
+                        background: #84a40d;
+                        color: rgb(217, 216, 216);
+                    }
+                }
+            }
+
+            .icon-box {
+                .icon {
+                    color: #fff;
+                    margin-top: 15px !important;
+
+                    p {
+                        margin-top: 10px !important;
+                        font-size: 18px;
+                        font-family: 'Cormorant Garamond' !important;
+                    }
+                    a{
+                        i{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .icons{
+                background: #91B40D;
+            }
+        }
+    }
+}

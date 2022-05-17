@@ -1,3 +1,5 @@
+// ----- Home Page -----
+
 .header {
     width: 100%;
     position: absolute;
@@ -338,6 +340,8 @@
                     caret-color: #fff;
                     font-family: 'Cormorant Garamond';
                     font-weight: 300;
+                    color: #fff;
+                    text-transform: capitalize;
 
                     &:focus {
                         outline: none !important;
@@ -367,8 +371,6 @@
 .sticky {
     background: #1A5221 !important;
     border-bottom: 5px solid #FFBF00;
-    border-left: 5px solid #FFBF00;
-    border-right: 5px solid #FFBF00;
     position: fixed;
     top: 0;
     right: 0;
@@ -451,7 +453,7 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    position: absolute;
+    position: fixed;
 
     .spinner {
         width: 100px;
@@ -476,11 +478,6 @@
 
 
 
-
-
-
-
-
 // Scrollbar CSS
 
 ::-webkit-scrollbar {
@@ -494,4 +491,110 @@
 ::-webkit-scrollbar-thumb {
     background: #FFBF00;
     border-radius: 30px;
+}
+
+
+// ---------- About Page ----------
+
+#header-about {
+    position: relative !important;
+
+    .header-1 {
+        .icon {
+
+            &:hover {
+                a {
+                    color: #000 !important;
+                }
+            }
+        }
+
+    }
+
+    .header-2 {
+        .header-2-nav {
+            .nav-links {
+                a {
+                    border-radius: 5px;
+                    padding: 10px 18px !important;
+                    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+                    &::after {
+                        display: none;
+                    }
+
+                    &::before {
+                        display: none;
+                    }
+
+                    &:hover {
+                        color: #fff !important;
+                        background-color: #91B40D;
+                        background-image: url(../images/about-images/link-bg.png);
+                        background-repeat: no-repeat;
+                        background-size: 32px;
+                        background-position: bottom right;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-mobile-menu {
+        .header-mobile-wrapper {
+            background: #fff !important;
+
+            .header-mobile-head {
+
+                .menu-close-btn {
+                    color: #000 !important;
+
+                    i {
+                        font-size: 40px;
+                    }
+
+                    &:hover {
+                        color: #FFBF00 !important;
+                    }
+                }
+            }
+
+            .header-mobile-body {
+                .header-mobile-link {
+                    a {
+                        color: #000 !important;
+                        &:hover{
+                        color: #FFBF00 !important;
+                        }
+                    }
+                }
+            }
+
+            .header-mobile-foot {
+
+                .mobile-social-icons {
+
+                    .mobile-social-icon {
+                        i {
+                            color: #000;
+                        }
+
+                        &:hover {
+                            a {
+                                i {
+                                    color: #FFBF00 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-main {
+    .sticky {
+        background: #fff !important;
+    }
 }

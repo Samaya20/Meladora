@@ -1,3 +1,5 @@
+// ------ Home Page ------
+
 .banner {
     position: relative;
     height: 650px;
@@ -72,4 +74,26 @@
             }
         }
     }
+}
+
+// ------ About Page ------
+
+.about-banner{
+    position: relative;
+    height: 690px;
+    padding-bottom: 130px !important;
+
+    .banner-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    .leafs{
+        position: absolute;
+        bottom: 5%;
+        right: 10%;
+    }
+  
 }

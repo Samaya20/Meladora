@@ -1,13 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Məhsullarımız</title>
     <link rel="icon" href="images/home-images/link-before-icon.svg">
+
+    <!-------------- Bootstrap Link  ----------------->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <!-------------- Font Awesome Link ----------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------- OwlCarousel Min.css Link  ----------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------- OwlCarousel Default.min.css Link  ----------------->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------- Main CSS Link  ----------------->
+    <link rel="stylesheet" href="sass/style.css" />
 </head>
+
 <body>
-    
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="main about-main">
+        <!-------------- Header start ---------------->
+        <header id="header-about" class="header d-flex justify-content-center">
+            <div class="container ms-2 me-2">
+                <div class="header-1 d-flex justify-content-between align-items-center">
+                    <div class="header-1-left">
+                        <div class="mobile-number">
+                            <a href="tel:994705555777" class="text-dark">
+                                <i class="fas fa-phone"></i>
+                                +994(70)555-57-77
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-1-right">
+                        <ul class="social-icons d-flex justify-content-between align-items-center">
+                            <li class="icon">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li class="icon">
+                                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="icon">
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="icon">
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li class="icon">
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-2 d-flex justify-content-between align-items-center">
+                    <div class="header-2-logo">
+                        <a href="index.html"> <img src="images/home-images/logo-text-black.svg" alt="logo" /></a>
+                    </div>
+                    <nav class="header-2-nav d-flex justify-content-between align-items-center">
+                        <ul class="nav-links d-flex">
+                            <li class="nav-link"><a href="about.html" class="text-dark">Biz kimik?</a></li>
+                            <li class="nav-link"><a href="introduction.html" class="text-dark">Bağlarımız</a></li>
+                            <li class="nav-link"><a href="products.html" class="text-dark">Məhsullarımız</a></li>
+                            <li class="nav-link"><a href="services.html" class="text-dark">Xidmətlərimiz</a></li>
+                            <li class="nav-link"><a href="social.html" class="text-dark">Sosial məsuliyyət</a></li>
+                            <li class="nav-link"><a href="contact.html" class="text-dark">Əlaqə</a></li>
+                            <li class="nav-link search-open-btn"> <img src="images/about-images/search-icon-black.svg"
+                                    alt="search" id="search-button"></li>
+                        </ul>
+                    </nav>
+                    <div class="header-mobile-icon text-dark">
+                        <img src="images/about-images/search-icon-black.svg" class="me-2 search-open-btn">
+                        <i class="fa-solid fa-bars bar"></i>
+                    </div>
+                </div>
+                <div class="header-mobile-menu" id="mobile-menu">
+                    <div class="header-mobile-wrapper d-flex flex-column justify-content-between align-items-center">
+                        <div
+                            class="header-mobile-head d-flex justify-content-between align-items-center ps-4 pe-4 pt-3">
+                            <a href="">
+                                <img src="images/home-images/logo-white.svg" class="header-mobile-logo" />
+                            </a>
+                            <div class="menu-close-btn bar">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <div class="header-mobile-body">
+                            <nav class="header-mobile-nav">
+                                <ul class="header-mobile-links d-flex flex-column align-items-center">
+                                    <li class="header-mobile-link">
+                                        <a href="about.html">Biz kimik?</a>
+                                    </li>
+                                    <li class="header-mobile-link">
+                                        <a href="introduction.html">Bağlarımız</a>
+                                    </li>
+                                    <li class="header-mobile-link">
+                                        <a href="products.html">Məhsullarımız</a>
+                                    </li>
+                                    <li class="header-mobile-link">
+                                        <a href="services.html">Xidmətlərimiz</a>
+                                    </li>
+                                    <li class="header-mobile-link">
+                                        <a href="social.html">Sosial məsuliyyət</a>
+                                    </li>
+                                    <li class="header-mobile-link">
+                                        <a href="contact.html">Əlaqə</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-mobile-foot pb-2 d-flex justify-content-center">
+                            <div class="mobile-social-icons d-flex justify-content-between align-items-center pt-2">
+                                <li class="mobile-social-icon">
+                                    <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="mobile-social-icon">
+                                    <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                                <li class="mobile-social-icon">
+                                    <a href="" target="_blank">
+                                        <i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li class="mobile-social-icon">
+                                    <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="mobile-social-icon">
+                                    <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-page" id="search-page">
+                    <div class="search-close-btn search-open-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <form>
+                        <input type="text" placeholder="Axtarış.." class="ps-3 pe-4 pt-2 pb-2">
+                        <button class="border-0">Axtar</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-------------- Header end ---------------->
+
+        <!-------------- Section-2 start --------------->
+        <div class="about-banner">
+            <img src="images/about-images/banner.png" alt="banner" class="banner-img">
+            <img src="images/about-images/leafs.svg" alt="" class="leafs">
+        </div>
+        <!-------------- Section-2 end --------------->
+
+        <!-------------- Section-3 start ------------->
+        <div class="about-section-3 d-flex justify-content-center align-items-center">
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-box">
+                            <div class="title text-center">
+                                <h1>Biz kimik?</h1>
+                                <img src="images/about-images/leaf-shape.png" class="mt-1 mb-1">
+                            </div>
+                            <p class="text-center">Əslində hər şey illər əvvəl İsmayıllı rayonunda ailəvi gəzintidə
+                                olduğumuz zaman baş verdi.
+                                İsmayıllı rayonunun füsunkar təbiətinin gözəlliyi bizim bir gün burda kənd təsərufatı
+                                ilə
+                                məşqul olmaq arzusunu oyatdı. Daha sonra dostlarımızla bu məsələni müzakirə edərək
+                                İsmayıllıda təsəruffat qurmağa qərar verdik.
+                                Böyük uğurlar vaxtında və yerində verilən qərarlarla çox bağlıdır.
+                                Elə bizdə ilk səfərdə qərar verdik və başladıq.İllər çox serətli keçdi.Bizdə böyümədə
+                                zamanın sürətindən geri qalmadıq.Qısa zaman müddətində əldə etdiyimiz uğurlar və daha
+                                sürətlə böyüməyə davam etməyimiz işimizə olan sevginin göstəricisidir.
+                                Alma,armud,nektarin,gavalı,gilas və qoz yetişdirməklə qalmadıq,tingçilik və toxumçuluqla
+                                məhsul sıramızı genişləndirdik.
+                                qısa zamanda ən son texnoloji yeniliklərlə damla suvarma sistemlərinin qurulması
+                                BAĞLARIN
+                                layihələndirilməsi,salınması kimi çətin işlərin ödəsindən uğurla gəldik.
+                                2022 ci ildə əsas hədəfimiz brendimizin "made in AZERBAİJAN" adına layiq ölkə kənarında
+                                rəflərdə görünməsidir.
+                                növbəti hədəfləri sizlərlə paylaşmaq arzusuyla.
+                                <br><br>
+                                hörmətlə
+                                <br><br>
+                                MELADORA kollektivi</p>
+                        </div>
+                        <div
+                            class="row icon-box d-flex align-items-center justify-content-center flex-column mt-2 pb-4">
+                            <img src="images/about-images/leaf-shape.png" alt="img" class="leaf" />
+                            <div class="icons d-flex align-items-center justify-content-center mt-3">
+                                <div class="icon icon-1 d-flex align-items-center justify-content-center flex-column">
+                                    <img src="images/home-images/plant-hand-icon.png" alt="icon" class="mb-2" />
+                                    <p>Organik</p>
+                                </div>
+                                <div class="icon icon-2 d-flex align-items-center justify-content-center flex-column">
+                                    <img src="images/home-images/heart-icon.png" alt="icon" class="mb-2" />
+                                    <p>Məmnuniyyət</p>
+                                </div>
+                                <div class="icon icon-3 d-flex align-items-center justify-content-center flex-column">
+                                    <img src="images/home-images/plant-icon.png" alt="icon" class="mb-2" />
+                                    <p>Lorem</p>
+                                </div>
+                                <div class="icon icon-4 d-flex align-items-center justify-content-center flex-column">
+                                    <img src="images/home-images/protect-icon.png" alt="icon" class="mb-2" />
+                                    <p>Yüksək keyfiyyət</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 about-image-box mt-3">
+                        <img src="images/about-images/vegetables.png" alt="vegetables">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------- Section-3 end ------------->
+        <!-------------- Section-4 start ------------->
+        <div class="about-section-4 d-flex justify-content-center align-items-center">
+            <div class="container mb-5">
+                <div class="title d-flex align-items-center flex-column">
+                    <h5 class="text-center">Xidmətlərimiz</h5>
+                    <img src="images/home-images/leaf-img.png" class="mt-2" />
+                </div>
+                <div class="row d-flex justify-content-between align-items-center ps-5 pe-5">
+                    <div class="col-lg-3 mt-5">
+                        <img src="images/about-images/water-icon.svg" alt="icon" class="mb-2">
+                        <h1>Damcı suvarma sistemləri</h1>
+                        <p class="mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has
+                            been the industry’s standard dummy text ever since the 1500s.</p>
+                    </div>
+                    <div class="col-lg-3 mt-5">
+                        <img src="images/about-images/note-icon.svg" alt="icon" class="mb-2">
+                        <h1>Layihələndirmə</h1>
+                        <p class="mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has
+                            been the industry’s standard dummy text ever since the 1500s.</p>
+                    </div>
+                    <div class="col-lg-3 mt-5">
+                        <img src="images/about-images/home-flower-icon.svg" alt="icon" class="mb-2">
+                        <h1>Açar təslim bağların salınması</h1>
+                        <p class="mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has
+                            been the industry’s standard dummy text ever since the 1500s.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------- Section-4 end ------------->
+        <!-------------- Section-5 start ------------->
+        <div class="about-section-5 d-flex justify-content-center align-items-center">
+            <img src="images/about-images/shape.png" alt="shape" class="shape">
+            <div class="container pt-3 pb-1">
+                <div class="title d-flex align-items-center flex-column">
+                    <h5 class="text-center">Qalereya</h5>
+                    <img src="images/home-images/leaf-img.png" class="mt-2 mb-4" />
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item  d-flex justify-content-center align-items-center flex-column mt-lg-5">
+                        <img src="images/about-images/karina-vorozheeva-brQS8ihqRq4-unsplash.svg">
+                        <img src="images/about-images/markus-spiske-k2BDz7QXuJM-unsplash.svg">
+                    </div>
+                    <div class="item  d-flex justify-content-center align-items-center flex-column">
+                        <img src="images/about-images/adele-payman-2oYMwuFgnTg-unsplash.svg">
+                        <img src="images/about-images/close-up-woman-harvesting-garden.svg">
+                    </div>
+                    <div class="item  d-flex justify-content-center align-items-center flex-column mt-lg-5">
+                        <img src="images/about-images/markus-winkler-HeqXGxnsnX4-unsplash.svg">
+                        <img src="images/about-images/markus-spiske-sFydXGrt5OA-unsplash.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------- Section-5 end ------------->
+        <!-------------- Footer start ------------->
+        <footer id="footer" class="footer footer-about d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row d-flex ">
+                        <div class="col-lg-4">
+                            <div class="footer-logo d-flex justify-content-center align-items-center mt-5">
+                                <a href="">
+                                    <img src="images/home-images/logo-text-black.svg" alt="logo" class="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2 d-flex justify-content-center align-items-center mt-4">
+                            <div class="footer-links text-center">
+                                <h1>Menyular</h1>
+                                <ul>
+                                    <li><a href="">Biz kimik?</a></li>
+                                    <li><a href="">Bağlarımız</a></li>
+                                    <li><a href="">Məhsullarımız</a></li>
+                                    <li><a href="">Xidmətlərimiz</a></li>
+                                    <li><a href="">Sosial məsuliyyət</a></li>
+                                    <li><a href="">Əlaqə</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 mt-4">
+                            <div class="footer-links text-center">
+                                <h1>Faydalı linklər</h1>
+                                <ul>
+                                    <li><a href="">Tez-tez soruşulanlar</a></li>
+                                    <li><a href="">Karyera</a></li>
+                                    <li><a href="">Xidmət şəbəkəsi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 mt-4">
+                            <div class="footer-links text-center">
+                                <h1>FAQ</h1>
+                                <ul>
+                                    <li><a href="">Təhlükəsizlik</a></li>
+                                    <li><a href="">Şərtlər və qaydalar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom text-center mt-3">
+                    <h1 class="pt-2">© Copyright 2022</h1>
+                </div>
+            </div>
+        </footer>
+        <!-------------- Footer end ------------->
+
+    </div>
+
+
+    </div>
+    <!-------------- Bootstrap Js script  ----------------->
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <!-------------- Jquery Script  ----------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-------------- OwlCarousel Js Link  ----------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-------------- Main Javascript ----------------->
+    <script src="js/main.js"></script>
 </body>
+
 </html>

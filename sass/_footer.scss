@@ -1,3 +1,4 @@
+// ---- Home Page ----
 .footer {
     width: 100%;
     height: 100%;
@@ -67,5 +68,64 @@
                 font-family: 'Cormorant Garamond';
             }
         }
+    }
+}
+
+// ---- About Page ----
+
+.footer-about{
+    background-image: url('../images/about-images/footer-bg.png') !important;
+
+    .footer-links {
+        li {
+            margin: 5px 0 !important;
+
+            a {
+                position: relative;
+                padding: 5px !important;
+                font-size: 18px;
+                font-family: 'Cormorant Garamond';
+                color: #000 !important;
+                transition: all .3s ease-in-out;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 100%;
+                    left: 50%;
+                    width: 0%;
+                    height: 1px;
+                    border-radius: 2px;
+                    background-color: #91B40D;
+                    transform: translateX(-50%);
+                    transition: all .3s ease-in-out;
+                }
+
+                &:hover {
+                    color: #91B40D;
+
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+
+        h1 {
+            color: #000 !important;
+            font-size: 20px;
+            font-family: 'Cormorant Garamond';
+            font-weight: bold;
+            margin-bottom: 5px !important;
+        }
+    }
+
+    .footer-bottom{
+        border-top: 1px solid #000 !important;
+    }
+
+    .logo{
+        width: 200px !important;
     }
 }

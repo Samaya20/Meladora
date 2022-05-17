@@ -1,3 +1,4 @@
+
 // ---- Loader ----
 
 $(window).on('load', function () {
@@ -31,7 +32,7 @@ $(document).ready(function () {
     })
 })
 
-// ---- Carousel ----
+// ---- Owl Carousel ----
 
 $('.owl-carousel').owlCarousel({
     loop: true,
@@ -52,4 +53,5 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
 

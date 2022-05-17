@@ -1,3 +1,4 @@
+// ---- Home Page ----
 .section-5 {
     position: relative;
     overflow: hidden;
@@ -12,7 +13,7 @@
     .container-fluid {
         padding-top: 100px !important;
 
-        h5{
+        h5 {
             font-family: 'Cormorant Garamond';
             font-size: 30px;
             font-weight: 600;
@@ -74,4 +75,51 @@
     }
 }
 
+// ---- About Page ----
+.about-section-5 {
+    width: 100%;
+    position: relative;
 
+    .shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 230px;
+    }
+
+    .container {
+        .title {
+            h5 {
+                font-family: 'Cormorant Garamond';
+                font-size: 36px;
+                font-weight: bold;
+            }
+        }
+
+        .owl-carousel {
+            .item {
+                cursor: grab;
+
+                img {
+                    margin-top: 20px !important;
+                    width: 70%;
+                }
+            }
+        }
+
+        .owl-theme .owl-dots .owl-dot.active span {
+            background-color: #91B40D;
+            padding: 6px !important;
+        }
+
+        .owl-theme .owl-dots .owl-dot span {
+            transition: all .4s ease-in-out;
+        }
+
+        .owl-theme .owl-dots .owl-dot {
+            margin: 7px !important;
+        }
+
+
+    }
+}       

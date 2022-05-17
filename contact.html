@@ -1,13 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Əlaqə</title>
     <link rel="icon" href="images/home-images/link-before-icon.svg">
+
+
+    <!-------------- Bootstrap Link  ----------------->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <!-------------- Font Awesome Link ----------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------- OwlCarousel Min.css Link  ----------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------- OwlCarousel Default.min.css Link  ----------------->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------- Main CSS Link  ----------------->
+    <link rel="stylesheet" href="sass/style.css" />
 </head>
+
 <body>
-    
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="main about-main">
+        <!-------------- Header start ---------------->
+        <header id="header-about" class="header d-flex justify-content-center">
+            <div class="container ms-2 me-2">
+                <div class="header-1 d-flex justify-content-between align-items-center">
+                    <div class="header-1-left">
+                        <div class="mobile-number">
+                            <a href="tel:994705555777" class="text-dark">
+                                <i class="fas fa-phone"></i>
+                                +994(70)555-57-77
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-1-right">
+                        <ul class="social-icons d-flex justify-content-between align-items-center">
+                            <li class="icon">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li class="icon">
+                                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="icon">
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="icon">
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li class="icon">
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-2 d-flex justify-content-between align-items-center">
+                    <div class="header-2-logo">
+                        <a href="index.html"> <img src="images/home-images/logo-text-black.svg" alt="logo" /></a>
+                    </div>
+                    <nav class="header-2-nav d-flex justify-content-between align-items-center">
+                        <ul class="nav-links d-flex">
+                            <li class="nav-link"><a href="about.html" class="text-dark">Biz kimik?</a></li>
+                            <li class="nav-link"><a href="introduction.html" class="text-dark">Bağlarımız</a></li>
+                            <li class="nav-link"><a href="products.html" class="text-dark">Məhsullarımız</a></li>
+                            <li class="nav-link"><a href="services.html" class="text-dark">Xidmətlərimiz</a></li>
+                            <li class="nav-link"><a href="social.html" class="text-dark">Sosial məsuliyyət</a></li>
+                            <li class="nav-link"><a href="contact.html" class="text-dark">Əlaqə</a></li>
+                            <li class="nav-link search-open-btn"> <img src="images/about-images/search-icon-black.svg"
+                                    alt="search" id="search-button"></li>
+                        </ul>
+                    </nav>
+                    <div class="header-mobile-icon text-dark">
+                        <img src="images/about-images/search-icon-black.svg" class="me-2 search-open-btn">
+                        <i class="fa-solid fa-bars bar"></i>
+                    </div>
+                </div>
+                <div class="header-mobile-menu" id="mobile-menu">
+                    <div class="header-mobile-wrapper d-flex flex-column justify-content-between align-items-center">
+                        <div
+                            class="header-mobile-head d-flex justify-content-between align-items-center ps-4 pe-4 pt-3 pb-3">
+                            <a href="">
+                                <img src="images/home-images/logo-text-black.svg" class="header-mobile-logo" />
+                            </a>
+                            <div class="menu-close-btn bar">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <div class="header-mobile-body">
+                            <nav class="header-mobile-nav">
+                                <ul class="header-mobile-links d-flex flex-column align-items-center">
+                                    <li class="header-mobile-link">
+                                        <a href="about.html">Biz kimik?</a>
+                                    </li>
+                                    <li class="header-mobile-link">
+                                        <a href="introduction.html">Bağlarımız</a>
+                                    </li>
+                                    <li class="header-mobile-link">
+                                        <a href="products.html">Məhsullarımız</a>
+                                    </li>
+                                    <li class="header-mobile-link">
+                                        <a href="services.html">Xidmətlərimiz</a>
+                                    </li>
+                                    <li class="header-mobile-link">
+                                        <a href="social.html">Sosial məsuliyyət</a>
+                                    </li>
+                                    <li class="header-mobile-link">
+                                        <a href="contact.html">Əlaqə</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-mobile-foot pb-2 d-flex justify-content-center">
+                            <div class="mobile-social-icons d-flex justify-content-between align-items-center pt-2">
+                                <li class="mobile-social-icon">
+                                    <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="mobile-social-icon">
+                                    <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                                <li class="mobile-social-icon">
+                                    <a href="" target="_blank">
+                                        <i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li class="mobile-social-icon">
+                                    <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="mobile-social-icon">
+                                    <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-page" id="search-page">
+                    <div class="search-close-btn search-open-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <form>
+                        <input type="text" placeholder="Axtarış.." class="ps-3 pe-4 pt-2 pb-2">
+                        <button class="border-0">Axtar</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-------------- Header end ---------------->
+
+        <!-------------- Section-2 start --------------->
+        <div class="about-banner">
+            <img src="images/about-images/banner.png" alt="banner" class="banner-img">
+            <img src="images/about-images/leafs.svg" alt="" class="leafs">
+        </div>
+        <!-------------- Section-2 end --------------->
+
+        <!-------------- Section-3 start ------------->
+        <div class="contact-section-3 d-flex justify-content-center">
+            <div class="container p-3">
+                <div class="row">
+                    <div class="col-lg-6 p-4">
+                        <h1>Müraciət Formu</h1>
+                        <form class="d-flex flex-column justify-content-center align-items-start">
+                            <input type="text" placeholder="Adınız, Soyadınız*" class="mt-2">
+                            <input type="number" placeholder="Telefon*" class="mt-2">
+                            <input type="email" placeholder="E-poçt*" class="mt-2">
+                            <textarea name="" id="" cols="30" rows="7" placeholder="Mesajınız" class="mt-2"></textarea>
+                            <button class="mt-2">Göndər</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center icons align-items-center p-3">
+                        <div class="icon-box">
+                            <div class="icon text-center">
+                                <img src="images/about-images/Group 333.svg" class="mb-1">
+                                <p> Tel: <br><br> +994 (70) 5555777</p>
+                            </div>
+                            <div class="icon text-center">
+                                <img src="images/about-images/Group 450.svg" class="mb-1">
+                                <p>İstehsal :
+                                    <br><br>
+
+                                    İSMAYILLI ray, Qalıncaq kəndi
+                                </p>
+                            </div>
+                            <div class="icon text-center">
+                                <img src="images/about-images/Path 4054.svg" class="mb-1">
+                                <p>MELADORA MMC
+                                    <br><br>
+                                    Baş ofis :
+                                    <br><br>
+                                    BAKI</p>
+                            </div>
+                            <div class="icon text-center">
+                                <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                                <a href=""> <i class="fa-brands fa-twitter-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------- Section-3 end ------------->
+
+        <!-------------- Footer start ------------->
+        <footer id="footer" class="footer footer-about d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row d-flex ">
+                        <div class="col-lg-4">
+                            <div class="footer-logo d-flex justify-content-center align-items-center mt-5">
+                                <a href="">
+                                    <img src="images/home-images/logo-text-black.svg" alt="logo" class="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2 d-flex justify-content-center align-items-center mt-4">
+                            <div class="footer-links text-center">
+                                <h1>Menyular</h1>
+                                <ul>
+                                    <li><a href="">Biz kimik?</a></li>
+                                    <li><a href="">Bağlarımız</a></li>
+                                    <li><a href="">Məhsullarımız</a></li>
+                                    <li><a href="">Xidmətlərimiz</a></li>
+                                    <li><a href="">Sosial məsuliyyət</a></li>
+                                    <li><a href="">Əlaqə</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 mt-4">
+                            <div class="footer-links text-center">
+                                <h1>Faydalı linklər</h1>
+                                <ul>
+                                    <li><a href="">Tez-tez soruşulanlar</a></li>
+                                    <li><a href="">Karyera</a></li>
+                                    <li><a href="">Xidmət şəbəkəsi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 mt-4">
+                            <div class="footer-links text-center">
+                                <h1>FAQ</h1>
+                                <ul>
+                                    <li><a href="">Təhlükəsizlik</a></li>
+                                    <li><a href="">Şərtlər və qaydalar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom text-center mt-3">
+                    <h1 class="pt-2">© Copyright 2022</h1>
+                </div>
+            </div>
+        </footer>
+        <!-------------- Footer end ------------->
+
+    </div>
+
+
+    </div>
+    <!-------------- Bootstrap Js script  ----------------->
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <!-------------- Jquery Script  ----------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-------------- OwlCarousel Js Link  ----------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-------------- Main Javascript ----------------->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
