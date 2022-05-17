@@ -926,6 +926,74 @@ table {
   background: #91B40D;
 }
 
+.introduction-section-3 {
+  position: relative;
+}
+
+.introduction-section-3 .shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+
+.introduction-section-3 .shape-1 {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  width: 150px;
+}
+
+.introduction-section-3 .container .title h1 {
+  font-family: 'Cormorant Garamond' !important;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.introduction-section-3 .container .title .leaf {
+  width: 40%;
+}
+
+.introduction-section-3 .container .row .text-box {
+  width: 65%;
+}
+
+.introduction-section-3 .container .row .text-box h1 {
+  font-family: 'Cormorant Garamond' !important;
+  font-size: 130px;
+  color: #918F8F;
+}
+
+.introduction-section-3 .container .row .text-box h4 {
+  font-family: 'Cormorant Garamond' !important;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 10px !important;
+}
+
+.introduction-section-3 .container .row .text-box p {
+  font-family: 'Cormorant Garamond' !important;
+  font-size: 17px;
+  color: #7C7A7A;
+  margin-top: 10px !important;
+}
+
+.social-section-3 .container .title h1 {
+  font-family: 'Cormorant Garamond';
+  font-size: 46px;
+}
+
+.social-section-3 .container .title .leaf {
+  width: 40%;
+}
+
+.social-section-3 .container .row .text-box p {
+  width: 60%;
+  font-size: 22px;
+  font-family: 'Cormorant Garamond';
+  font-weight: medium;
+}
+
 .section-4 {
   overflow: hidden;
 }
