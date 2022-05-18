@@ -752,6 +752,30 @@ table {
   right: 10%;
 }
 
+.services-section-2 .container .row .main-img {
+  width: 90% !important;
+  border-radius: 5px;
+}
+
+.services-section-2 .container .row .text-box {
+  width: 88% !important;
+  margin-bottom: 20px !important;
+}
+
+.services-section-2 .container .row .text-box h1 {
+  font-size: 24px;
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
+  margin-top: 10px !important;
+}
+
+.services-section-2 .container .row .text-box p {
+  margin-top: 10px !important;
+  font-size: 16px;
+  font-family: 'Cormorant Garamond';
+  color: #7C7A7A;
+}
+
 .section-3 {
   overflow: hidden;
 }
@@ -1141,6 +1165,7 @@ table {
 
 .section-5 .container-fluid .row .col-lg-2 .text-box span {
   color: #91B40D;
+  font-size: 14px;
 }
 
 .about-section-5 {

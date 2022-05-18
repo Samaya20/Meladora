@@ -2,6 +2,7 @@
 
 .section-4 {
     overflow: hidden;
+
     .container {
         padding: 1.7rem !important;
         position: relative;
@@ -12,7 +13,8 @@
             top: 68%;
             left: 40%;
         }
-        h5{
+
+        h5 {
             font-family: 'Cormorant Garamond' !important;
             font-size: 36px;
             font-weight: 600;
@@ -26,7 +28,7 @@
                     transition: all .3s ease-in-out;
                     cursor: pointer;
 
-                    &:hover{
+                    &:hover {
                         transform: scale(0.9);
                     }
                 }
@@ -41,14 +43,14 @@
 
                     h3 {
                         font-size: 30px !important;
-                        font-family:  'Cormorant Garamond';
+                        font-family: 'Cormorant Garamond';
                         font-weight: 300;
                     }
 
                     p {
                         font-size: 16px;
                         color: #7C7A7A;
-                        font-family:  'Cormorant Garamond';
+                        font-family: 'Cormorant Garamond';
                         font-weight: 500;
                     }
                 }
@@ -59,24 +61,24 @@
 
 // ----- About Page -----
 
-.about-section-4{
-    .container{
-        .title{
-            h5{
+.about-section-4 {
+    .container {
+        .title {
+            h5 {
                 font-size: 36px;
                 font-weight: bold;
                 font-family: 'Cormorant Garamond';
             }
         }
 
-        .row{
-            h1{
+        .row {
+            h1 {
                 font-family: 'Cormorant Garamond';
                 font-size: 24px;
                 font-weight: bold;
             }
 
-            p{
+            p {
                 font-size: 16px;
                 font-family: 'Cormorant Garamond';
                 font-weight: medium;
