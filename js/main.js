@@ -54,6 +54,14 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+// ---- Product click ----
+
+$(document).ready(function () {
+    $('.apple').click(function () {
+        $('.product-info').toggleClass('active');
+    })
+})
+
 
 
 
