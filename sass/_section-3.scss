@@ -48,7 +48,7 @@
 
                     .icons .icon {
                         img {
-                            width: 25px !important;
+                            width: 30px !important;
                         }
 
                         p {
@@ -70,44 +70,61 @@
 // ----- About Page ----
 
 .about-section-3 {
+    position: relative;
+
     .container {
-        padding: 0 1rem !important;
+        .shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+        }
 
         .row {
             .text-box {
-                .title {
+                padding: 0.8rem 0.6rem 0.3rem 0.6rem !important;
+
+
+                .text {
                     h1 {
-                        font-size: 48px;
+                        font-size: 36px !important;
+                        font-family: 'Cormorant Garamond';
                         font-weight: bold;
-                        font-family: 'Cormorant Garamond' !important;
+
+                    }
+
+                    p {
+                        font-size: 16px !important;
+                        font-family: 'Cormorant Garamond';
+                        font-weight: bold;
                     }
 
                     img {
-                        width: 40%;
+                        width: 200px !important;
                     }
                 }
 
-                p {
-                    font-family: 'Cormorant Garamond' !important;
-                    font-size: 15px;
-                }
-            }
+                .icon-box {
+                    img {
+                        width: 300px;
+                    }
 
-            .icon-box {
-                .leaf {
-                    width: 70%;
-                }
+                    .icons .icon {
+                        img {
+                            width: 30px !important;
+                        }
 
-                .icon {
-                    margin: 11px !important;
+                        p {
+                            font-size: 16px;
+                            font-family: 'Cormorant Garamond';
+                            font-weight: bold;
+                        }
+                    }
 
-                    p {
-                        font-weight: bold;
-                        font-size: 11px;
-                        font-family: 'Cormorant Garamond' !important;
+                    .icon:not(:first-child) {
+                        margin-left: 20px !important;
                     }
                 }
-
             }
 
             .about-image-box {
@@ -125,81 +142,171 @@
 
 // ----- Contact Page -----
 
+// .contact-section-3 {
+//     .container {
+//         .row {
+//             border: 1px solid rgba(0, 0, 0, 0.219);
+
+//             form {
+//                 width: 100%;
+
+//                 input {
+//                     width: 100%;
+//                     padding: 15px !important;
+//                     font-size: 16px;
+//                     text-transform: capitalize;
+//                     caret-color: rgb(19, 191, 19);
+//                     border: 0;
+//                     border-bottom: 1px solid rgba(0, 0, 0, 0.379);
+
+//                     &:focus {
+//                         outline: none;
+//                     }
+//                 }
+
+//                 textarea {
+//                     width: 100%;
+//                     text-transform: capitalize;
+//                     font-size: 16px;
+//                     padding: 15px !important;
+
+//                     &:focus {
+//                         outline: none;
+//                     }
+//                 }
+
+//                 button {
+//                     font-size: 20px;
+//                     padding: 10px 35px;
+//                     background: #91B40D;
+//                     border: none;
+//                     color: #fff;
+//                     transition: all .3s ease;
+//                     cursor: pointer;
+
+//                     &:hover {
+//                         transform: scale(0.9);
+//                         background: #84a40d;
+//                         color: rgb(217, 216, 216);
+//                     }
+//                 }
+//             }
+
+//             .icon-box {
+//                 .icon {
+//                     color: #fff;
+//                     margin-top: 15px !important;
+
+//                     p {
+//                         margin-top: 10px !important;
+//                         font-size: 18px;
+//                         font-family: 'Cormorant Garamond' !important;
+//                     }
+
+//                     a {
+//                         i {
+//                             color: #fff;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .icons {
+//                 background: #91B40D;
+//             }
+//         }
+//     }
+// }
+
+
 .contact-section-3 {
+    width: 100%;
+
     .container {
         .row {
-            border: 1px solid rgba(0, 0, 0, 0.219);
 
-            form {
-                width: 100%;
+            .col-lg-4 {
+                padding: 10px !important;
 
-                input {
+                .card {
                     width: 100%;
-                    padding: 15px !important;
-                    font-size: 16px;
-                    text-transform: capitalize;
-                    caret-color: rgb(19, 191, 19);
-                    border: 0;
-                    border-bottom: 1px solid rgba(0, 0, 0, 0.379);
-
-                    &:focus {
-                        outline: none;
-                    }
-                }
-
-                textarea {
-                    width: 100%;
-                    text-transform: capitalize;
-                    font-size: 16px;
-                    padding: 15px !important;
-
-                    &:focus {
-                        outline: none;
-                    }
-                }
-
-                button {
-                    font-size: 20px;
-                    padding: 10px 35px;
-                    background: #91B40D;
+                    height: 100%;
                     border: none;
-                    color: #fff;
-                    transition: all .3s ease;
+                    padding-top: 100px !important;
                     cursor: pointer;
+                    position: relative;
 
                     &:hover {
-                        transform: scale(0.9);
-                        background: #84a40d;
-                        color: rgb(217, 216, 216);
-                    }
-                }
-            }
 
-            .icon-box {
-                .icon {
-                    color: #fff;
-                    margin-top: 15px !important;
-
-                    p {
-                        margin-top: 10px !important;
-                        font-size: 18px;
-                        font-family: 'Cormorant Garamond' !important;
+                        .image {
+                            animation: shake .3s ease-in-out;
+                            animation-iteration-count: 2;
+                        }
                     }
 
-                    a {
-                        i {
-                            color: #fff;
+
+
+
+                    .image {
+                        background: #fff;
+                        box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.097);
+                        position: absolute;
+                        top: 0;
+
+                        img {
+                            width: 70px;
+                            height: 70px;
+                        }
+                    }
+
+
+                    .card-body {
+                        width: 100%;
+                        background: #F5F5F5;
+                        display: flex;
+                        align-items: center;
+
+                        p {
+                            font-family: 'Cormorant Garamond';
+                            font-size: 20px;
+
+                            a {
+                                font-family: 'Cormorant Garamond';
+                                color: #000;
+                            }
                         }
                     }
                 }
             }
-
-            .icons {
-                background: #91B40D;
-            }
         }
     }
+
+
 }
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(0eg);
+    }
+
+    75% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
 
 // ----- Introduction Page -----
 
@@ -234,8 +341,18 @@
         }
 
         .row {
+            .main-img {
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
             .text-box {
-                width: 65%;
+                width: 85%;
+                padding: 1.8rem !important;
 
                 h1 {
                     font-family: 'Cormorant Garamond' !important;

@@ -599,3 +599,22 @@
         background: #fff !important;
     }
 }
+
+
+#btnScrollUp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 15px !important;
+    border-radius: 5px;
+    border: none;
+    background: #FFBF00;
+    color: #fff;
+    z-index: 9997;
+    transition: all .3s ease-in-out;
+
+    &:hover,
+    &:active {
+        background: #d3a10b;
+    }
+}

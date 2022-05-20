@@ -23,6 +23,7 @@ time, mark, audio, video {
   vertical-align: baseline;
   text-decoration: none !important;
   font-family: Montserrat;
+  scroll-behavior: smooth;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -644,6 +645,24 @@ table {
   background: #fff !important;
 }
 
+#btnScrollUp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 15px !important;
+  border-radius: 5px;
+  border: none;
+  background: #FFBF00;
+  color: #fff;
+  z-index: 9997;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#btnScrollUp:hover, #btnScrollUp:active {
+  background: #d3a10b;
+}
+
 .banner {
   position: relative;
   height: 650px;
@@ -818,7 +837,7 @@ table {
 }
 
 .section-3 .container-fluid .row .text-box .icon-box .icons .icon img {
-  width: 25px !important;
+  width: 30px !important;
 }
 
 .section-3 .container-fluid .row .text-box .icon-box .icons .icon p {
@@ -831,37 +850,53 @@ table {
   margin-left: 20px !important;
 }
 
-.about-section-3 .container {
-  padding: 0 1rem !important;
+.about-section-3 {
+  position: relative;
 }
 
-.about-section-3 .container .row .text-box .title h1 {
-  font-size: 48px;
+.about-section-3 .container .shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+}
+
+.about-section-3 .container .row .text-box {
+  padding: 0.8rem 0.6rem 0.3rem 0.6rem !important;
+}
+
+.about-section-3 .container .row .text-box .text h1 {
+  font-size: 36px !important;
+  font-family: 'Cormorant Garamond';
   font-weight: bold;
-  font-family: 'Cormorant Garamond' !important;
 }
 
-.about-section-3 .container .row .text-box .title img {
-  width: 40%;
-}
-
-.about-section-3 .container .row .text-box p {
-  font-family: 'Cormorant Garamond' !important;
-  font-size: 15px;
-}
-
-.about-section-3 .container .row .icon-box .leaf {
-  width: 70%;
-}
-
-.about-section-3 .container .row .icon-box .icon {
-  margin: 11px !important;
-}
-
-.about-section-3 .container .row .icon-box .icon p {
+.about-section-3 .container .row .text-box .text p {
+  font-size: 16px !important;
+  font-family: 'Cormorant Garamond';
   font-weight: bold;
-  font-size: 11px;
-  font-family: 'Cormorant Garamond' !important;
+}
+
+.about-section-3 .container .row .text-box .text img {
+  width: 200px !important;
+}
+
+.about-section-3 .container .row .text-box .icon-box img {
+  width: 300px;
+}
+
+.about-section-3 .container .row .text-box .icon-box .icons .icon img {
+  width: 30px !important;
+}
+
+.about-section-3 .container .row .text-box .icon-box .icons .icon p {
+  font-size: 16px;
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
+}
+
+.about-section-3 .container .row .text-box .icon-box .icon:not(:first-child) {
+  margin-left: 20px !important;
 }
 
 .about-section-3 .container .row .about-image-box {
@@ -880,74 +915,108 @@ table {
   width: 100%;
 }
 
-.contact-section-3 .container .row {
-  border: 1px solid rgba(0, 0, 0, 0.219);
-}
-
-.contact-section-3 .container .row form {
+.contact-section-3 {
   width: 100%;
 }
 
-.contact-section-3 .container .row form input {
+.contact-section-3 .container .row .col-lg-4 {
+  padding: 10px !important;
+}
+
+.contact-section-3 .container .row .col-lg-4 .card {
   width: 100%;
-  padding: 15px !important;
-  font-size: 16px;
-  text-transform: capitalize;
-  caret-color: #13bf13;
-  border: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.379);
-}
-
-.contact-section-3 .container .row form input:focus {
-  outline: none;
-}
-
-.contact-section-3 .container .row form textarea {
-  width: 100%;
-  text-transform: capitalize;
-  font-size: 16px;
-  padding: 15px !important;
-}
-
-.contact-section-3 .container .row form textarea:focus {
-  outline: none;
-}
-
-.contact-section-3 .container .row form button {
-  font-size: 20px;
-  padding: 10px 35px;
-  background: #91B40D;
+  height: 100%;
   border: none;
-  color: #fff;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  padding-top: 100px !important;
   cursor: pointer;
+  position: relative;
 }
 
-.contact-section-3 .container .row form button:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  background: #84a40d;
-  color: #d9d8d8;
+.contact-section-3 .container .row .col-lg-4 .card:hover .image {
+  -webkit-animation: shake .3s ease-in-out;
+          animation: shake .3s ease-in-out;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
 }
 
-.contact-section-3 .container .row .icon-box .icon {
-  color: #fff;
-  margin-top: 15px !important;
+.contact-section-3 .container .row .col-lg-4 .card .image {
+  background: #fff;
+  -webkit-box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.097);
+          box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.097);
+  position: absolute;
+  top: 0;
 }
 
-.contact-section-3 .container .row .icon-box .icon p {
-  margin-top: 10px !important;
-  font-size: 18px;
-  font-family: 'Cormorant Garamond' !important;
+.contact-section-3 .container .row .col-lg-4 .card .image img {
+  width: 70px;
+  height: 70px;
 }
 
-.contact-section-3 .container .row .icon-box .icon a i {
-  color: #fff;
+.contact-section-3 .container .row .col-lg-4 .card .card-body {
+  width: 100%;
+  background: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.contact-section-3 .container .row .icons {
-  background: #91B40D;
+.contact-section-3 .container .row .col-lg-4 .card .card-body p {
+  font-family: 'Cormorant Garamond';
+  font-size: 20px;
+}
+
+.contact-section-3 .container .row .col-lg-4 .card .card-body p a {
+  font-family: 'Cormorant Garamond';
+  color: #000;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(0eg);
+            transform: rotate(0eg);
+  }
+  75% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(0eg);
+            transform: rotate(0eg);
+  }
+  75% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 .introduction-section-3 {
@@ -978,8 +1047,20 @@ table {
   width: 40%;
 }
 
+.introduction-section-3 .container .row .main-img {
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.introduction-section-3 .container .row .main-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .introduction-section-3 .container .row .text-box {
-  width: 65%;
+  width: 85%;
+  padding: 1.8rem !important;
 }
 
 .introduction-section-3 .container .row .text-box h1 {
@@ -1131,6 +1212,7 @@ table {
   -webkit-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.084);
           box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.084);
   padding: 1rem 1.8rem !important;
+  margin: 0 1px 25px 1px !important;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   -webkit-transform: scale(1);
@@ -1160,7 +1242,8 @@ table {
 
 .section-5 .container-fluid .row .col-lg-2 .text-box p {
   font-size: 22px;
-  font-family: 'Charm';
+  font-weight: 500;
+  color: #91B40D;
 }
 
 .section-5 .container-fluid .row .col-lg-2 .text-box span {
@@ -1191,9 +1274,25 @@ table {
   cursor: grab;
 }
 
-.about-section-5 .container .owl-carousel .item img {
+.about-section-5 .container .owl-carousel .item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-section-5 .container .owl-carousel .item a img {
   margin-top: 20px !important;
   width: 70%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.about-section-5 .container .owl-carousel .item a img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .about-section-5 .container .owl-theme .owl-dots .owl-dot.active span {
@@ -1268,9 +1367,26 @@ table {
 }
 
 #product .product-info .product-info-container .info .text-box p:last-child {
-  font-size: 18px;
+  font-size: 15px;
   color: #7C7A7A;
   font-family: 'Cormorant Garamond';
+}
+
+#product .product-info .product-info-container .info .product-image {
+  width: 95%;
+}
+
+#product .product-info .product-info-container .info-bottom-images img {
+  width: 90%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#product .product-info .product-info-container .info-bottom-images img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #product .product-info .product-info-container .close {
@@ -1312,7 +1428,7 @@ table {
 
 .section-6 .container .row .col-lg-3 {
   background-color: #f4f3f3;
-  padding: 1rem !important;
+  padding: 0.7rem !important;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   cursor: pointer;

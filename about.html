@@ -23,6 +23,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------- FancBox CSS Link --------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <!-------------- Main CSS Link  ----------------->
     <link rel="stylesheet" href="sass/style.css" />
 </head>
@@ -166,35 +168,36 @@
         <!-------------- Section-3 start ------------->
         <div class="about-section-3 d-flex justify-content-center align-items-center">
             <div class="container mb-5">
+                <img class="shape" src="images/home-images/shape.png" alt="shape" />
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="text-box">
-                            <div class="title text-center">
-                                <h1>Biz kimik?</h1>
-                                <img src="images/about-images/leaf-shape.png" class="mt-1 mb-1">
-                            </div>
-                            <p class="text-center">Əslində hər şey illər əvvəl İsmayıllı rayonunda ailəvi gəzintidə
-                                olduğumuz zaman baş verdi.
-                                İsmayıllı rayonunun füsunkar təbiətinin gözəlliyi bizim bir gün burda kənd təsərufatı
-                                ilə
-                                məşqul olmaq arzusunu oyatdı. Daha sonra dostlarımızla bu məsələni müzakirə edərək
-                                İsmayıllıda təsəruffat qurmağa qərar verdik.
-                                Böyük uğurlar vaxtında və yerində verilən qərarlarla çox bağlıdır.
-                                Elə bizdə ilk səfərdə qərar verdik və başladıq.İllər çox serətli keçdi.Bizdə böyümədə
-                                zamanın sürətindən geri qalmadıq.Qısa zaman müddətində əldə etdiyimiz uğurlar və daha
-                                sürətlə böyüməyə davam etməyimiz işimizə olan sevginin göstəricisidir.
-                                Alma,armud,nektarin,gavalı,gilas və qoz yetişdirməklə qalmadıq,tingçilik və toxumçuluqla
-                                məhsul sıramızı genişləndirdik.
-                                qısa zamanda ən son texnoloji yeniliklərlə damla suvarma sistemlərinin qurulması
-                                BAĞLARIN
-                                layihələndirilməsi,salınması kimi çətin işlərin ödəsindən uğurla gəldik.
-                                2022 ci ildə əsas hədəfimiz brendimizin "made in AZERBAİJAN" adına layiq ölkə kənarında
-                                rəflərdə görünməsidir.
-                                növbəti hədəfləri sizlərlə paylaşmaq arzusuyla.
-                                <br><br>
+                    <div
+                        class="text-box col-lg-6 d-flex align-items-center justify-content-center flex-column text-center">
+                        <div class="text d-flex align-items-center justify-content-center flex-column">
+                            <h1 class="mt-1">Biz kimik?</h1>
+                            <img src="images/home-images/leaf-img.png" class="mt-1 mb-2" />
+                            <p>
+                                Əslində hər şey illər əvvəl İsmayıllı rayonunda ailəvi gəzintidə
+                                olduğumuz zaman baş verdi. İsmayıllı rayonunun füsunkar
+                                təbiətinin gözəlliyi bizim bir gün burda kənd təsərufatı ilə
+                                məşqul olmaq arzusunu oyatdı. Daha sonra dostlarımızla bu
+                                məsələni müzakirə edərək İsmayıllıda təsəruffat qurmağa qərar
+                                verdik. Böyük uğurlar vaxtında və yerində verilən qərarlarla çox
+                                bağlıdır. Elə bizdə ilk səfərdə qərar verdik və başladıq.İllər
+                                çox serətli keçdi.Bizdə böyümədə zamanın sürətindən geri
+                                qalmadıq.Qısa zaman müddətində əldə etdiyimiz uğurlar və daha
+                                sürətlə böyüməyə davam etməyimiz işimizə olan sevginin
+                                göstəricisidir. Alma,armud,nektarin,gavalı,gilas və qoz
+                                yetişdirməklə qalmadıq,tingçilik və toxumçuluqla məhsul sıramızı
+                                genişləndirdik. qısa zamanda ən son texnoloji yeniliklərlə damla
+                                suvarma sistemlərinin qurulması BAĞLARIN
+                                layihələndirilməsi,salınması kimi çətin işlərin ödəsindən uğurla
+                                gəldik. 2022 ci ildə əsas hədəfimiz brendimizin "made in
+                                AZERBAİJAN" adına layiq ölkə kənarında rəflərdə görünməsidir.
+                                növbəti hədəfləri sizlərlə paylaşmaq arzusuyla. <br /><br />
                                 hörmətlə
-                                <br><br>
-                                MELADORA kollektivi</p>
+                                <br /><br />
+                                MELADORA kollektivi
+                            </p>
                         </div>
                         <div
                             class="row icon-box d-flex align-items-center justify-content-center flex-column mt-2 pb-4">
@@ -269,16 +272,26 @@
                 </div>
                 <div class="owl-carousel owl-theme">
                     <div class="item  d-flex justify-content-center align-items-center flex-column mt-lg-5">
-                        <img src="images/about-images/karina-vorozheeva-brQS8ihqRq4-unsplash.svg">
-                        <img src="images/about-images/markus-spiske-k2BDz7QXuJM-unsplash.svg">
+                        <a data-fancybox="gallery"
+                            href="images/about-images/karina-vorozheeva-brQS8ihqRq4-unsplash.svg"><img
+                                src="images/about-images/karina-vorozheeva-brQS8ihqRq4-unsplash.svg"></a>
+                        <a data-fancybox="gallery"
+                            href="images/about-images/markus-spiske-k2BDz7QXuJM-unsplash.svg"><img
+                                src="images/about-images/markus-spiske-k2BDz7QXuJM-unsplash.svg"></a>
                     </div>
                     <div class="item  d-flex justify-content-center align-items-center flex-column">
-                        <img src="images/about-images/adele-payman-2oYMwuFgnTg-unsplash.svg">
-                        <img src="images/about-images/close-up-woman-harvesting-gardenn.svg">
+                        <a data-fancybox="gallery" href="images/about-images/adele-payman-2oYMwuFgnTg-unsplash.svg"><img
+                                src="images/about-images/adele-payman-2oYMwuFgnTg-unsplash.svg"></a>
+                        <a data-fancybox="gallery" href="images/about-images/close-up-woman-harvesting-gardenn.svg"><img
+                                src="images/about-images/close-up-woman-harvesting-gardenn.svg"></a>
                     </div>
                     <div class="item  d-flex justify-content-center align-items-center flex-column mt-lg-5">
-                        <img src="images/about-images/markus-winkler-HeqXGxnsnX4-unsplash.svg">
-                        <img src="images/about-images/markus-spiske-sFydXGrt5OA-unsplashh.svg">
+                        <a data-fancybox="gallery"
+                            href="images/about-images/markus-winkler-HeqXGxnsnX4-unsplash.svg"><img
+                                src="images/about-images/markus-winkler-HeqXGxnsnX4-unsplash.svg"></a>
+                        <a data-fancybox="gallery"
+                            href="images/about-images/markus-spiske-sFydXGrt5OA-unsplashh.svg"><img
+                                src="images/about-images/markus-spiske-sFydXGrt5OA-unsplashh.svg"></a>
                     </div>
                 </div>
             </div>
@@ -348,6 +361,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-------------- FancyBox Script --------------->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <!-------------- OwlCarousel Js Link  ----------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
