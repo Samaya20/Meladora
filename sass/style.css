@@ -654,7 +654,7 @@ table {
   border: none;
   background: #FFBF00;
   color: #fff;
-  z-index: 9997;
+  z-index: 990;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
