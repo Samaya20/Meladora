@@ -710,26 +710,26 @@ table {
           justify-content: center;
 }
 
-.banner .carousel .container .item {
+.banner .carousel .container .main-item {
   position: relative;
   cursor: -webkit-grab;
   cursor: grab;
 }
 
-.banner .carousel .container .item .text-box {
+.banner .carousel .container .main-item .text-box {
   position: absolute;
   top: 20%;
   left: 7%;
 }
 
-.banner .carousel .container .item .text-box h1 {
+.banner .carousel .container .main-item .text-box h1 {
   color: #fff;
   font-size: 32px;
   font-family: 'Cormorant Garamond';
   font-weight: bold;
 }
 
-.banner .carousel .container .item .text-box a {
+.banner .carousel .container .main-item .text-box a {
   color: #fff;
   font-size: 22px;
   font-family: 'Cormorant Garamond';
@@ -771,6 +771,12 @@ table {
   right: 10%;
 }
 
+.services-section-2 .container .title h1 {
+  font-family: 'Cormorant Garamond' !important;
+  font-size: 36px;
+  font-weight: 600;
+}
+
 .services-section-2 .container .row .main-img {
   width: 90% !important;
   border-radius: 5px;
@@ -793,6 +799,7 @@ table {
   font-size: 16px;
   font-family: 'Cormorant Garamond';
   color: #7C7A7A;
+  line-height: 23px;
 }
 
 .section-3 {
@@ -826,6 +833,7 @@ table {
   padding: 0 1rem !important;
   font-family: 'Cormorant Garamond';
   font-weight: bold;
+  line-height: 27px;
 }
 
 .section-3 .container-fluid .row .text-box .text img {
@@ -875,6 +883,7 @@ table {
   font-size: 16px !important;
   font-family: 'Cormorant Garamond';
   font-weight: bold;
+  line-height: 27px;
 }
 
 .about-section-3 .container .row .text-box .text img {
@@ -912,11 +921,17 @@ table {
 }
 
 .about-section-3 .container .row .about-image-box img {
-  width: 100%;
+  width: 80%;
 }
 
 .contact-section-3 {
   width: 100%;
+}
+
+.contact-section-3 .container .title h1 {
+  font-family: 'Cormorant Garamond' !important;
+  font-size: 36px;
+  font-weight: 600;
 }
 
 .contact-section-3 .container .row .col-lg-4 {
@@ -1039,12 +1054,8 @@ table {
 
 .introduction-section-3 .container .title h1 {
   font-family: 'Cormorant Garamond' !important;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: bold;
-}
-
-.introduction-section-3 .container .title .leaf {
-  width: 40%;
 }
 
 .introduction-section-3 .container .row .main-img {
@@ -1054,13 +1065,13 @@ table {
 }
 
 .introduction-section-3 .container .row .main-img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .introduction-section-3 .container .row .text-box {
-  width: 85%;
-  padding: 1.8rem !important;
+  width: 80%;
+  padding: 0.5rem !important;
 }
 
 .introduction-section-3 .container .row .text-box h1 {
@@ -1081,11 +1092,13 @@ table {
   font-size: 17px;
   color: #7C7A7A;
   margin-top: 10px !important;
+  line-height: 23px;
 }
 
 .social-section-3 .container .title h1 {
   font-family: 'Cormorant Garamond';
-  font-size: 46px;
+  font-size: 36px;
+  font-weight: 500;
 }
 
 .social-section-3 .container .title .leaf {
@@ -1094,9 +1107,10 @@ table {
 
 .social-section-3 .container .row .text-box p {
   width: 60%;
-  font-size: 22px;
+  font-size: 20px;
   font-family: 'Cormorant Garamond';
   font-weight: medium;
+  line-height: 28px;
 }
 
 .section-4 {
@@ -1170,6 +1184,7 @@ table {
   font-family: 'Cormorant Garamond';
   font-weight: medium;
   color: #7C7A7A;
+  line-height: 22px;
 }
 
 .section-5 {
@@ -1309,6 +1324,12 @@ table {
   margin: 7px !important;
 }
 
+#product .head h5 {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Cormorant Garamond';
+}
+
 #product .product-info {
   width: 100%;
   height: 100%;
@@ -1422,43 +1443,38 @@ table {
 
 .section-6 .container h5 {
   font-family: 'Cormorant Garamond';
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 600;
 }
 
-.section-6 .container .row .col-lg-3 {
-  background-color: #f4f3f3;
-  padding: 0.7rem !important;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  cursor: pointer;
-  border: 0.1px solid rgba(128, 128, 128, 0.127);
-  margin-bottom: 30px !important;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+.section-6 .container .second-item {
+  margin: 10px !important;
 }
 
-.section-6 .container .row .col-lg-3:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.section-6 .container .row .col-lg-3 img {
-  width: 100%;
-}
-
-.section-6 .container .row .col-lg-3 .text-box h1 {
+.section-6 .container .second-item .text-box h1 {
+  font-family: 'Cormorant Garamond';
   font-size: 20px;
-  font-family: 'Cormorant Garamond';
   font-weight: bold;
-  color: #2F2A2A;
 }
 
-.section-6 .container .row .col-lg-3 .text-box p {
+.section-6 .container .second-item .text-box p {
   font-family: 'Cormorant Garamond';
-  font-weight: 400;
   font-size: 16px;
-  color: #7C7A7A;
+  line-height: 24px;
+}
+
+.section-6 .container .owl-theme .owl-dots .owl-dot.active span {
+  background-color: #FFBF00;
+  padding: 6px !important;
+}
+
+.section-6 .container .owl-theme .owl-dots .owl-dot span {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.section-6 .container .owl-theme .owl-dots .owl-dot {
+  margin: 7px !important;
 }
 
 .footer {
@@ -1609,6 +1625,9 @@ table {
   }
   .about-banner .leafs {
     width: 200px;
+  }
+  .social-icons .icon a i {
+    font-size: 18px !important;
   }
   .section-3 .container-fluid .row .section-3-img {
     height: 360px;

@@ -13,44 +13,40 @@
 
       h5 {
          font-family: 'Cormorant Garamond';
-         font-size: 30px;
+         font-size: 36px;
          font-weight: 600;
       }
 
-      .row {
-         .col-lg-3 {
-            background-color: rgb(244, 243, 243);
-            padding: 0.7rem !important;
-            transition: all .3s ease-in-out;
-            cursor: pointer;
-            border: 0.1px solid rgba(128, 128, 128, 0.127);
-            margin-bottom: 30px !important;
-            transform: scale(1);
+      .second-item {
+         margin: 10px !important;
 
-            &:hover {
-               transform: scale(1.1);
+         .text-box {
+            h1 {
+               font-family: 'Cormorant Garamond';
+               font-size: 20px;
+               font-weight: bold;
             }
 
-            img {
-               width: 100%;
-            }
-
-            .text-box {
-               h1 {
-                  font-size: 20px;
-                  font-family: 'Cormorant Garamond';
-                  font-weight: bold;
-                  color: #2F2A2A;
-               }
-
-               p {
-                  font-family: 'Cormorant Garamond';
-                  font-weight: 400;
-                  font-size: 16px;
-                  color: #7C7A7A;
-               }
+            p {
+               font-family: 'Cormorant Garamond';
+               font-size: 16px;
+               line-height: 24px;
             }
          }
       }
+
+      .owl-theme .owl-dots .owl-dot.active span {
+         background-color: #FFBF00;
+         padding: 6px !important;
+      }
+
+      .owl-theme .owl-dots .owl-dot span {
+         transition: all .4s ease-in-out;
+      }
+
+      .owl-theme .owl-dots .owl-dot {
+         margin: 7px !important;
+      }
+
    }
 }

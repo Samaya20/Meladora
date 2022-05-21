@@ -34,6 +34,7 @@
                         padding: 0 1rem !important;
                         font-family: 'Cormorant Garamond';
                         font-weight: bold;
+                        line-height: 27px;
                     }
 
                     img {
@@ -97,6 +98,7 @@
                         font-size: 16px !important;
                         font-family: 'Cormorant Garamond';
                         font-weight: bold;
+                        line-height: 27px;
                     }
 
                     img {
@@ -133,7 +135,7 @@
                 align-items: center;
 
                 img {
-                    width: 100%;
+                    width: 80%;
                 }
             }
         }
@@ -223,6 +225,14 @@
     width: 100%;
 
     .container {
+        .title {
+            h1 {
+                font-family: 'Cormorant Garamond' !important;
+                font-size: 36px;
+                font-weight: 600;
+            }
+        }
+
         .row {
 
             .col-lg-4 {
@@ -331,12 +341,8 @@
         .title {
             h1 {
                 font-family: 'Cormorant Garamond' !important;
-                font-size: 48px;
+                font-size: 36px;
                 font-weight: bold;
-            }
-
-            .leaf {
-                width: 40%;
             }
         }
 
@@ -346,13 +352,13 @@
                 transition: all .3s ease-in-out;
 
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(0.9);
                 }
             }
 
             .text-box {
-                width: 85%;
-                padding: 1.8rem !important;
+                width: 80%;
+                padding: 0.5rem !important;
 
                 h1 {
                     font-family: 'Cormorant Garamond' !important;
@@ -372,6 +378,7 @@
                     font-size: 17px;
                     color: #7C7A7A;
                     margin-top: 10px !important;
+                    line-height: 23px;
                 }
             }
         }
@@ -385,7 +392,8 @@
         .title {
             h1 {
                 font-family: 'Cormorant Garamond';
-                font-size: 46px;
+                font-size: 36px;
+                font-weight: 500;
             }
 
             .leaf {
@@ -397,9 +405,10 @@
             .text-box {
                 p {
                     width: 60%;
-                    font-size: 22px;
+                    font-size: 20px;
                     font-family: 'Cormorant Garamond';
                     font-weight: medium;
+                    line-height: 28px;
                 }
             }
         }
